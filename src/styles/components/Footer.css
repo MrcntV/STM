@@ -1,0 +1,76 @@
+.VSlide4-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  padding: 50px;
+}
+
+.VSlide4-menu-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 0.7rem;
+  padding: 2em 2em 0em 2em;
+  border-top: 1px solid var(--High-contrast-Text);
+  margin-top: 2vh;
+}
+
+.VSlide4-menu-info.burger {
+  padding: 2em 0em 0em 0em;
+  width: 100%;
+}
+
+.VSlide4-menu-info.burger p {
+  width: 100%;
+}
+
+.VSlide4-menu-info a {
+  padding: 0;
+}
+
+.VSlide4-menu-info p {
+  padding: 5px;
+  text-align: center;
+}
+
+.VSlide4-menu-social-list a {
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: var(--font-size-small);
+  }
+  .VSlide4-menu-info a {
+    padding: 0;
+    font-size: var(--font-size-small);
+  }
+
+  .VSlide4-menu-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 0.7rem;
+    padding: 0;
+    border-top: 1px solid var(--High-contrast-Text);
+    margin-top: 2vh;
+  }
+
+  .VSlide4-menu-info a {
+    padding: 0;
+  }
+
+  .VSlide4-menu-social-list a {
+    padding: 2px;
+  }
+}

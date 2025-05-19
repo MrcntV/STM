@@ -1,0 +1,72 @@
+/* 📌 Container principal */
+.banner {
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+  text-align: center;
+  width: 100vw;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 📌 Texte */
+.banner p {
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: var(--MaxWidthBanner);
+  padding-bottom: 0;
+}
+
+/* 📌 Mises en valeur */
+.bold {
+  font-weight: 600;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .banner p {
+    max-width: 750px;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 25vh;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  .banner p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 20vh;
+  }
+
+  .banner p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.4;
+  }
+}

@@ -1,38 +1,407 @@
-.App {
+@font-face {
+  font-family: "Neuton";
+  src: url("styles/font/Neuton-ExtraLight.woff2") format("woff2"),
+    url("styles/font/Neuton-ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "argesta_headlineregular";
+  src: url("styles/font/Argesta_Font_Web/Argesta_Webfont/argestaheadline-regular-webfont.eot");
+  src: url("styles/font/Argesta_Font_Web/Argesta_Webfont/argestaheadline-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("styles/font/Argesta_Font_Web/Argesta_Webfont/argestaheadline-regular-webfont.woff2")
+      format("woff2"),
+    url("styles/font/Argesta_Font_Web/Argesta_Webfont/argestaheadline-regular-webfont.woff")
+      format("woff"),
+    url("styles/font/Argesta_Font_Web/Argesta_Webfont/argestaheadline-regular-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "argesta_headlineregular";
+  letter-spacing: 0.5px;
+  background-color: var(--Backgroundsection);
+  color: var(--High-contrast-Text);
+}
+
+body.modal-open,
+html.modal-open {
+  overflow: hidden;
+}
+
+:root {
+  --HauteurHeader: 8vh;
+
+  /* font sizes */
+  --font-size-small: clamp(12px, 0.8vw, 16px);
+  --font-size-medium: clamp(16px, 1vw, 20px);
+  --font-size-large: clamp(24px, 1.5vw, 32px);
+
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --border-radius: 5px;
+  --padding: 10px 15px;
+
+  /* Backgrounds */
+  --Backgroundsection: #0d1b2b;
+  --BackgroundLight: color(srgb 0.55 0.65 0.75);
+  --section: color(srgb 0.43 0.6489 0.7268);
+  --CardBackground: color(srgb 0.3 0.35 0.45);
+  --icon-color: #1c263d;
+
+  /* Borders and Text */
+  --BordersAndSeparators: color(srgb 0.4344 0.4394 0.4565);
+  --BorderLight: color(srgb 0.5 0.55 0.65);
+  --BorderDark: color(srgb 0.35 0.4 0.5);
+  --High-contrast-Text: #e6e7e4;
+  --Medium-contrast-Text: color(srgb 0.85 0.85 0.85);
+  --MutedText: color(srgb 0.65 0.7 0.75);
+  --Margin: 10px;
+  --PaddingMobile: 24px 24px 24px 24px;
+  --MaxWidthText: 750px;
+  --MaxWidthBanner: 1300px;
+
+  /* Buttons and links */
+  --PrimaryButton: color(srgb 0.25 0.5 0.6);
+  --SecondaryButton: color(srgb 0.4 0.5 0.6);
+  --HoverEffect: color(srgb 0.3 0.55 0.65);
+  --links: #435b7b;
+  --ButtonHover: #435b7b4f;
+  --disabledLink: #435b7b;
+  --titre: #435b7b;
+
+  /* Alerts and Status */
+  --accent: color(srgb 0.15 0.5 0.65);
+  --danger: color(srgb 0.75 0.25 0.25);
+  --success: color(srgb 0.3 0.6 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.html {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.curseur {
+  background-color: var(--High-contrast-Text);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+  mix-blend-mode: difference;
+}
+
+.curseur-text {
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+  color: var(--disabledLink);
+}
+
+a {
+  text-decoration: none;
+  color: var(--High-contrast-Text);
+  list-style-type: none;
+}
+
+a:hover {
+  color: var(--links);
+  transform: all 0.3s;
+}
+
+header {
+  position: fixed;
+  width: auto;
+  z-index: 1000;
+  opacity: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.3px;
+  line-height: 1em;
+}
+
+h1 {
+  color: var(--High-contrast-Text);
+  font-size: clamp(25px, calc(40 * 0.01 * 8vmin), 30px);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2,
+h3 {
+  color: var(--High-contrast-Text);
+  font-size: clamp(18px, calc(25 * 0.01 * 8vmin), 30px);
+  text-align: left;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  color: var(--High-contrast-Text);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h5 {
+  color: var(--titre);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h6 {
+  color: var(--titre);
+  font-size: 1rem;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90vw;
+}
+.DecalageHeader {
+  margin-top: var(--HauteurHeader);
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  height: 100%;
+  background-color: transparent;
+  color: var(--High-contrast-Text);
+  border: 1px solid var(--High-contrast-Text);
+  padding: 8px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  transition: all 0.3s ease-out;
+  width: 100vw;
+  overflow: hidden;
+  min-height: 25vh;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--Margin);
+}
+
+button {
+  color: var(--High-contrast-Text);
+  padding: 10px 15px;
+  font-weight: 500;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border: none;
+  outline: none;
+
+  z-index: 1;
+}
+
+label {
+  width: auto;
+  height: 100%;
+}
+
+svg {
+  height: 100%;
+}
+
+p {
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  padding-bottom: 1em;
+  font-size: var(--font-size-small);
+  line-height: 1.5;
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid var(--High-contrast-Text);
+  color: var(--High-contrast-Text);
+  resize: none;
+}
+
+select {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  color: var(--High-contrast-Text);
+  border: 1px solid var(--High-contrast-Text);
+}
+
+select option {
+  font-size: 1rem;
+  color: var(--BordersAndSeparators);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--BordersAndSeparators);
+  box-shadow: 0 0 5px var(--BordersAndSeparators);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+::selection {
+  background: var(--Backgroundsection);
+  color: var(--High-contrast-Text);
+  text-shadow: none;
+  outline: none !important;
+}
+
+.lazy-load-image-background {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: none;
+    max-width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2,
+  h3 {
+    color: var(--High-contrast-Text);
+    width: 100%;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  footer {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1030px) {
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 2559px) {
+  h6 {
+    color: #eee;
+    color: var(--titre);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  select,
+  textarea {
+    background-color: initial;
+    border: 1px solid #eee;
+    border: 1px solid var(--High-contrast-Text);
+    border-radius: 2px;
+    color: #eee;
+    color: var(--High-contrast-Text);
+    margin: 2vh 0;
+    padding: 22px;
+    width: 100%;
+    height: 4vh;
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    color: var(--titre);
+    font-size: clamp(25px, calc(40 * 0.01 * 12vmin), 50px);
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    color: var(--High-contrast-Text);
+    font-size: clamp(18px, calc(25 * 0.01 * 12vmin), 30px);
+    text-align: left;
+    width: 100%;
+  }
+
+  p {
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: justify;
+    padding-bottom: 0.5em;
+    line-height: 1.3;
   }
 }

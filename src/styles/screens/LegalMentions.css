@@ -1,0 +1,75 @@
+.legal-container {
+  min-width: 100vw;
+  max-width: 100vw;
+  margin-top: var(--HauteurHeader);
+  color: var(--Backgroundsection);
+  background-color: var(--High-contrast-Text);
+}
+
+.legal-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--Backgroundsection);
+}
+
+.legal-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.legal-intro a {
+  color: var(--links);
+  text-decoration: underline;
+}
+
+.legal-section,
+.legal-intro {
+  width: 100%;
+  padding: 2vw;
+}
+
+.legal-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--Backgroundsection);
+  margin-bottom: 10px;
+}
+
+.legal-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.legal-contact {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.legal-contact a {
+  color: var(--links);
+  text-decoration: underline;
+}
+
+/* 🎨 Responsive Design */
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 20px;
+  }
+
+  .legal-title {
+    font-size: 2rem;
+  }
+
+  .legal-intro {
+    font-size: 1rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .legal-section p {
+    font-size: 0.95rem;
+  }
+}

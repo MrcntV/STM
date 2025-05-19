@@ -1,0 +1,196 @@
+.contact-section {
+  display: flex;
+  min-width: 100vw;
+  min-height: 80vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+.contact-info p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  gap: 5px;
+}
+.contact-info h1,
+.contact-info h2 {
+  text-align: center;
+}
+
+.contact-form-container {
+  height: auto;
+  width: 100%;
+  padding: var(--Margin);
+}
+
+.Copyright {
+  width: 100%;
+  height: auto;
+}
+
+.signature {
+  margin-top: 2vh;
+}
+.contact-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--links);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: var(--links);
+}
+
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 15px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: var(--padding);
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+  font-size: 16px;
+}
+
+/* Boutons Homme/Femme */
+.gender-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.gender-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid var(--High-contrast-Text);
+  border-radius: var(--border-radius);
+  color: var(--High-contrast-Text);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.gender-button input[type="radio"] {
+  display: none;
+}
+
+.gender-button .button-label {
+  display: inline-block;
+  pointer-events: none;
+  padding: 8px; /* Padding par défaut */
+}
+
+/* Effet quand le bouton est sélectionné */
+.gender-button input[type="radio"]:checked + .button-label {
+  background-color: var(--links);
+  color: var(--High-contrast-Text);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px var(--BordersAndSeparators);
+  border: 1px solid var(--links);
+}
+
+.submit-button-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Margin);
+  appearance: none;
+  background-color: var(--High-contrast-Text);
+  border: 1px solid var(--Backgroundsection);
+  box-sizing: border-box;
+  color: var(--Backgroundsection);
+  cursor: pointer;
+  font-family: Clarkson, Helvetica, sans-serif;
+  min-width: 100px;
+  max-width: 200px;
+  height: 50px;
+  max-height: 50px;
+  max-height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  padding: var(--Margin);
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  z-index: 998;
+}
+
+/* Effet au survol */
+.gender-button:hover {
+  background-color: var(--links);
+  color: var(--High-contrast-Text);
+  box-shadow: 0 0 5px var(--BordersAndSeparators);
+  border: 1px solid var(--links);
+}

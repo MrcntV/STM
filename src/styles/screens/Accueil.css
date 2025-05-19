@@ -1,0 +1,34 @@
+.video-container-home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container-home video {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ✅ Responsive pour mobiles */
+@media (max-width: 768px) {
+  .video-container-home {
+    height: 100vh;
+  }
+  .video-container-home video {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/* ✅ Support pour les écrans 4K ultra-larges */
+@media (min-width: 2560px) {
+  .video-container-home video {
+    width: 100vw;
+    height: 100vh;
+  }
+}

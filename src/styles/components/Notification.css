@@ -1,0 +1,159 @@
+/* Container global */
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+/* Icône */
+.notification .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Texte */
+.notification .message {
+  flex: 1;
+}
+
+/* Bouton de fermeture */
+.notification .close-btn {
+  background: none;
+  border: none;
+  color: var(--High-contrast-Text);
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.notification.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+/* Boutons de test */
+.test-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.test-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid var(--Backgroundsection);
+}
+
+.test-buttons button:nth-child(1) {
+  border-left: 3px solid var(--success);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+.test-buttons button:nth-child(2) {
+  border-left: 3px solid var(--danger);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+.test-buttons button:nth-child(3) {
+  border-left: 3px solid var(--accent);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+.notification.success span svg {
+  color: var(--success);
+}
+.notification.error span svg {
+  color: var(--danger);
+}
+.notification.info span svg {
+  color: var(--accent);
+}
+
+/* Notifications */
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 2px;
+  font-weight: 500;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.notification.success {
+  border-left: 3px solid var(--success);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+.notification.error {
+  border-left: 3px solid var(--danger);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+.notification.info {
+  border-left: 3px solid var(--accent);
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+}
+
+/* Icône */
+.notification .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Texte */
+.notification .message {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.notification::before .close-btn::before {
+  color: transparent;
+}
+
+.notification .close-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
