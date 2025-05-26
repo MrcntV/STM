@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import { Helmet } from "react-helmet";
@@ -13,7 +13,6 @@ import {
 import ContactForm from "../components/05_ContactForm";
 
 const Contact: React.FC = () => {
-  const form = useRef<HTMLFormElement>(null);
   const currentDate = new Date();
 
   return (

@@ -39,7 +39,7 @@ html.modal-open {
 :root {
   --HauteurHeader: 8vh;
 
-  /* font sizes */
+  /* Font sizes */
   --font-size-small: clamp(12px, 0.8vw, 16px);
   --font-size-medium: clamp(16px, 1vw, 20px);
   --font-size-large: clamp(24px, 1.5vw, 32px);
@@ -50,39 +50,38 @@ html.modal-open {
   --padding: 10px 15px;
 
   /* Backgrounds */
-  --Backgroundsection: #0d1b2b;
-  --BackgroundLight: color(srgb 0.55 0.65 0.75);
-  --section: color(srgb 0.43 0.6489 0.7268);
-  --CardBackground: color(srgb 0.3 0.35 0.45);
-  --icon-color: #1c263d;
+  --Backgroundsection: #eaeaea;
+  --BackgroundLight: #a8c4e1;
+  --section: #a8c4e1;
+  --CardBackground: #a9afb5;
+  --icon-color: #232c3b;
 
   /* Borders and Text */
-  --BordersAndSeparators: color(srgb 0.4344 0.4394 0.4565);
-  --BorderLight: color(srgb 0.5 0.55 0.65);
-  --BorderDark: color(srgb 0.35 0.4 0.5);
-  --High-contrast-Text: #e6e7e4;
-  --Medium-contrast-Text: color(srgb 0.85 0.85 0.85);
-  --MutedText: color(srgb 0.65 0.7 0.75);
+  --BordersAndSeparators: #a9afb5;
+  --BorderLight: #a8c4e1;
+  --BorderDark: #232c3b;
+  --High-contrast-Text: #232c3b;
+  --Medium-contrast-Text: #a9afb5;
+  --MutedText: #a8c4e1;
   --Margin: 10px;
   --PaddingMobile: 24px 24px 24px 24px;
   --MaxWidthText: 750px;
   --MaxWidthBanner: 1300px;
 
   /* Buttons and links */
-  --PrimaryButton: color(srgb 0.25 0.5 0.6);
-  --SecondaryButton: color(srgb 0.4 0.5 0.6);
-  --HoverEffect: color(srgb 0.3 0.55 0.65);
-  --links: #435b7b;
-  --ButtonHover: #435b7b4f;
-  --disabledLink: #435b7b;
-  --titre: #435b7b;
+  --PrimaryButton: #232c3b;
+  --SecondaryButton: #a8c4e1;
+  --HoverEffect: #a9afb5;
+  --links: #232c3b;
+  --ButtonHover: #a8c4e17f; /* 50% opacity */
+  --disabledLink: #a9afb5;
+  --titre: #232c3b;
 
   /* Alerts and Status */
-  --accent: color(srgb 0.15 0.5 0.65);
-  --danger: color(srgb 0.75 0.25 0.25);
-  --success: color(srgb 0.3 0.6 0.4);
+  --accent: #a8c4e1;
+  --danger: #c14444;
+  --success: #3c8c60;
 }
-
 * {
   margin: 0;
   padding: 0;

@@ -17,7 +17,7 @@ const Loader: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.5 }}
       >
-        <p>{"footer.siteBy"}</p>
+        <p>Site réalisé par V. MARCONNET</p>
       </motion.div>
     </div>
   );

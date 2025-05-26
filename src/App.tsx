@@ -8,13 +8,7 @@ import "../src/styles/components/Footer.css";
 import "../src/styles/components/MenuBurger.css";
 import "../src/styles/components/ScrollToTopButton.css";
 import "../src/styles/components/Button.css";
-import "../src/styles/components/LanguageSelector.css";
-import "../src/styles/components/CarCard.css";
-import "../src/styles/components/InstagramFeed.css";
-import "../src/styles/components/showroom-section.css";
-import "../src/styles/components/VideoCarousel.css";
 import "../src/styles/components/Loader.css";
-import "../src/styles/components/NewArrival.css";
 import "../src/styles/components/RMGservices.css";
 import "../src/styles/components/ServicesSection.css";
 import "../src/styles/components/Banner.css";
@@ -23,7 +17,6 @@ import "../src/styles/components/AudioPlayer.css";
 
 import "../src/styles/screens/Accueil.css";
 import "../src/styles/screens/contact.css";
-import "../src/styles/screens/carsdetails.css";
 import "../src/styles/screens/LegalMentions.css";
 
 // Importation des composants nécessaires

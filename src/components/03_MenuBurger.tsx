@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import {
   FaInstagram,
@@ -15,7 +15,6 @@ const MenuBurger: React.FC = () => {
   const [isInitialRender, setIsInitialRender] = useState(true);
   const menuRef = useRef<HTMLUListElement>(null);
   const [scope, animate] = useAnimate();
-  const navigate = useNavigate();
 
   const instagramUrl = process.env.REACT_APP_INSTAGRAM_URL || "#";
   const youtubeUrl = process.env.REACT_APP_YOUTUBE_URL || "#";
@@ -137,7 +136,7 @@ const MenuBurger: React.FC = () => {
         <div className="navbar_links_right">
           <motion.div className="navbar_links_right_mid">
             <div className="contact">
-              <h2>"menu.contact"</h2>
+              <h2>Contact</h2>
               <div className="contact-infos">
                 <a href="">
                   <FaMapMarkerAlt /> {contactAddress}

@@ -1,6 +1,6 @@
 "use client";
 
-import * as motion from "motion/react-client";
+import { motion } from "framer-motion";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
