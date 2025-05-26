@@ -1,9 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Banner from "../components/Banner";
 
 const LegalMentions: React.FC = () => {
-  // Animation d'apparition des sections
   const fadeInVariants = {
     hidden: { opacity: 0, y: 20 },
     show: {
@@ -14,107 +12,119 @@ const LegalMentions: React.FC = () => {
   };
 
   return (
-    <motion.section
-      className="legal-container"
-      initial="hidden"
-      animate="show"
-      exit="hidden"
-    >
-      <motion.h1 variants={fadeInVariants} className="legal-title">
-        Mentions Légales & Politique de Confidentialité
-      </motion.h1>
-
-      <motion.p variants={fadeInVariants} className="legal-intro">
-        La société Auto Idéaly, soucieuse des droits des individus, notamment au
-        regard des traitements automatisés et dans une volonté de transparence
-        avec ses clients, a mis en place une politique reprenant l’ensemble de
-        ces traitements. <br />
-        <br />
-        Pour toute information complémentaire sur la protection des données
-        personnelles, veuillez consulter :{" "}
-        <a
-          href="https://www.cnil.fr/"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <motion.div
+        className="legal-header"
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <motion.h1 variants={fadeInVariants} className="legal-title">
+          MENTIONS LÉGALES
+        </motion.h1>
+      </motion.div>
+      <motion.section
+        className="legal-container"
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <motion.p
+          variants={fadeInVariants}
+          className="legal-intro legal-section-0"
         >
-          CNIL.fr
-        </a>
-      </motion.p>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 1 - Mentions légales</h2>
-        <p>
-          <strong>1.1 Site :</strong> Auto Idéaly <br />
-          <strong>1.2 Éditeur :</strong> Auto Idéaly SASU, 69 Rue des Narcisses,
-          83230 Bormes-les-Mimosas <br />
-          <strong>1.3 Hébergeur :</strong> Gandi, 63 Boulevard Masséna, 75013
-          Paris.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 2 - Accès au site</h2>
-        <p>
-          L'accès au site est réservé à un usage strictement personnel. Toute
-          utilisation commerciale, publicitaire ou sollicitations non autorisées
-          sont interdites.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 3 - Contenu du site</h2>
-        <p>
-          Tous les contenus présents sur le site (textes, images, vidéos, etc.)
-          sont protégés par le droit de la propriété intellectuelle et
-          appartiennent à Auto Idéaly ou à ses partenaires.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 4 - Gestion du site</h2>
-        <p>
-          L'éditeur se réserve le droit de suspendre ou de limiter l’accès au
-          site à tout moment pour maintenance ou toute autre nécessité.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 5 - Responsabilités</h2>
-        <p>
-          L'éditeur n'est pas responsable en cas de problème technique affectant
-          l'accès au site ni des dommages causés par l'utilisation du site.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 6 - Collecte des données</h2>
-        <p>
-          Les données personnelles collectées sont utilisées uniquement pour la
-          gestion de la relation client et ne sont pas revendues à des tiers.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-section">
-        <h2>Article 7 - Cookies</h2>
-        <p>
-          Le site utilise des cookies pour améliorer l’expérience utilisateur.
-          L’utilisateur peut les désactiver via les paramètres de son
-          navigateur.
-        </p>
-      </motion.div>
-
-      <motion.div variants={fadeInVariants} className="legal-contact">
-        <h2>Article 8 - Contact</h2>
-        <p>
-          Pour toute question, contactez-nous à :{" "}
-          <a href="mailto:pierre.cizeron@agenceauto.com">
-            pierre.cizeron@agenceauto.com
-          </a>
-        </p>
-      </motion.div>
-
-      <Banner />
-    </motion.section>
+          Mise à jour : 5 Mai, 2025
+          <br />
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 1. Éditeur du site</strong>{" "}
+          </h2>
+          <p className="">
+            <br />
+            Ce site est édité par :
+            <br />
+            <strong>Raison sociale :</strong> Vincent-Nicolas Marconnet
+            <br />
+            Forme juridique : Auto-entrepreneur
+            <br />
+            Siège social : 18 bis route de Bellegarde - 42330 Saint-Galmier
+            <br />
+            SIRET : 980 5868 2000 0014
+            <br />
+            TVA : Non applicable selon article 293 B du CGI
+            <br />
+            Responsable de publication : Vincent-Nicolas Marconnet
+            <br />
+            Email : contact@stm-nettoyage.fr
+            <br />
+          </p>
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 2. Hébergement</strong>
+          </h2>{" "}
+          <p className="">
+            <br />
+            Ce site est hébergé par : Hostinger — https://www.hostinger.com
+            <br />
+          </p>
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 3. Propriété intellectuelle </strong>
+          </h2>
+          <p className="">
+            <br />
+            Tous les contenus présents sur le site (textes, images, vidéos,
+            design, code...) sont la propriété exclusive de STM ou font l’objet
+            d’autorisations spécifiques. Toute reproduction est interdite sans
+            accord préalable.
+            <br />
+          </p>
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 4. Responsabilité</strong>
+          </h2>{" "}
+          <br />
+          <p>
+            STM ne saurait être tenu responsable de l’usage fait du site ou des
+            erreurs éventuelles dans le contenu.
+            <br />
+          </p>
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 5. Données personnelles</strong>
+          </h2>
+          <p>
+            <br />
+            Aucune donnée personnelle n’est collectée via le site.
+            <br />
+          </p>
+          <br />
+          <h2 className="legal-titre-secondaire">
+            {" "}
+            <strong> 6. Cookies</strong>
+          </h2>{" "}
+          <p>
+            <br />
+            Le site n’utilise aucun cookie de suivi, marketing ou publicitaire.
+            <br />
+            <br />
+            Pour plus d'informations sur vos droits, consultez :
+            <a
+              href="https://www.cnil.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CNIL.fr
+            </a>{" "}
+          </p>
+        </motion.p>
+      </motion.section>
+    </>
   );
 };
 

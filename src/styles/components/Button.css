@@ -35,6 +35,7 @@ button {
   vertical-align: baseline;
   white-space: nowrap;
   z-index: 998;
+  border-radius: var(--border-radius);
 }
 
 button:before {
@@ -51,11 +52,13 @@ button:before {
   transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
     -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
+  border-radius: var(--border-radius);
 }
 
 button:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  border-radius: var(--border-radius);
 }
 
 button:after {

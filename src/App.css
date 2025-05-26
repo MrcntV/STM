@@ -46,7 +46,7 @@ html.modal-open {
 
   --spacing-small: 10px;
   --spacing-medium: 20px;
-  --border-radius: 5px;
+  --border-radius: 20px;
   --padding: 10px 15px;
 
   /* Backgrounds */
@@ -60,7 +60,7 @@ html.modal-open {
   --BordersAndSeparators: #a9afb5;
   --BorderLight: #a8c4e1;
   --BorderDark: #232c3b;
-  --High-contrast-Text: #232c3b;
+  --High-contrast-Text: #237aba;
   --Medium-contrast-Text: #a9afb5;
   --MutedText: #a8c4e1;
   --Margin: 10px;

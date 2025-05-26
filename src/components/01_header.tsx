@@ -40,6 +40,9 @@ const Headers: React.FC = () => {
           <img src="/images/logo/logo.png" alt="logo race motors group" />
         </a>
       </div>
+      <div className="containerlogo">
+        <button> Contactez-nous</button>
+      </div>
     </header>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
+// import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const { lang } = useParams<{ lang?: string }>();
@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
   const formattedDate = currentDate.toLocaleDateString(selectedLang, options);
 
   // Récupérer les variables d'environnement avec valeurs par défaut
-  const instagramUrl = process.env.REACT_APP_INSTAGRAM_URL || "#";
-  const youtubeUrl = process.env.REACT_APP_YOUTUBE_URL || "#";
-  const facebookUrl = process.env.REACT_APP_FACEBOOK_URL || "#";
+  // const instagramUrl = process.env.REACT_APP_INSTAGRAM_URL || "#";
+  //const youtubeUrl = process.env.REACT_APP_YOUTUBE_URL || "#";
+  // const facebookUrl = process.env.REACT_APP_FACEBOOK_URL || "#";
   const contactEmail =
     process.env.REACT_APP_CONTACT_EMAIL || "contact@example.com";
   const copyrightName = process.env.REACT_APP_COPYRIGHT_NAME || "Auto Idéaly";
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <p>{contactEmail}</p>
         </a>
 
-        {/* Réseaux sociaux */}
+        {/* Réseaux sociaux 
         <div className="VSlide4-menu-social-list">
           <a
             href={instagramUrl}
@@ -65,28 +65,28 @@ const Footer: React.FC = () => {
             <FaFacebook style={{ height: "16px", width: "16px" }} />
           </a>
         </div>
+         */}
 
         {/* Mentions légales et politique de confidentialité */}
         <p>
-          <NavLink
-            to={`/${selectedLang}/legal-mentions`}
-            style={{ padding: "2px" }}
-          ></NavLink>{" "}
+          <NavLink to={`/mentions-legales`} style={{ padding: "2px" }}>
+            Mention légale
+          </NavLink>{" "}
           |
           <NavLink
-            to={`/${selectedLang}/privacy-policy`}
+            to={`/politique-de-confidentialite`}
             style={{ padding: "2px" }}
           >
-            privacy
+            Politique de confidentialité
           </NavLink>
         </p>
       </div>
 
       <div className="VSlide4-menu-info">
         <p>
-          © {copyrightName} {currentDate.getFullYear()} |{" "}
+          © {copyrightName} {currentDate.getFullYear()} | Tous droits réservés
         </p>
-        <p>site by</p>
+        <p>Site réalisé par V. MARCONNET</p>
       </div>
     </footer>
   );

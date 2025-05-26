@@ -1,24 +1,52 @@
-import React from "react";
-import { motion } from "framer-motion";
+"use client";
 
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import AnimatedSVG from "./AnimatedSVG";
 
 const Loader: React.FC = () => {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 3000); // Total 4s
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="loader-container">
-      {/* SVG animé */}
+      {/* SVG animé avec fondu */}
+      <AnimatePresence>
+        {visible && (
+          <motion.div
+            key="logo"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <AnimatedSVG />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      <AnimatedSVG />
-
-      {/* Texte animé */}
-      <motion.div
-        className="loader-text"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
-      >
-        <p>Site réalisé par V. MARCONNET</p>
-      </motion.div>
+      {/* Texte animé avec fondu d'entrée et sortie */}
+      <AnimatePresence>
+        {visible && (
+          <motion.div
+            key="text"
+            className="loader-text"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+            }}
+          >
+            <p>Site réalisé par V. MARCONNET</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

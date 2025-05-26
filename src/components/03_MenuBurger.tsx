@@ -107,9 +107,9 @@ const MenuBurger: React.FC = () => {
   }, [showLinks]);
 
   const menuItems = [
-    { label: "menu.home", path: `/` },
-    { label: "menu.vehicles", path: `cars` },
-    { label: "menu.contact", path: `/contact` },
+    { label: "Acceuil", path: `/` },
+    { label: "Nos Services", path: `services` },
+    { label: "Contact", path: `/contact` },
   ];
 
   return (
@@ -153,32 +153,34 @@ const MenuBurger: React.FC = () => {
                   <FaEnvelope /> {contactEmail}
                 </a>
               </div>
-              <div className="Menu-social-list">
-                <a
-                  href={instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href={youtubeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube"
-                >
-                  <FaYoutube />
-                </a>
-                <a
-                  href={facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <FaFacebook />
-                </a>
-              </div>
+              {/* 
+<div className="Menu-social-list">
+  <a
+    href={instagramUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+  <a
+    href={youtubeUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+  >
+    <FaYoutube />
+  </a>
+  <a
+    href={facebookUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebook />
+  </a>
+</div>
+*/}
             </div>
           </motion.div>
 
@@ -196,17 +198,16 @@ const MenuBurger: React.FC = () => {
             />
             <motion.div className="navbar_links_right-lien">
               <NavLink to={`/cgv`} onClick={closeMenu}>
-                "footer.legal" |
+                Mentions légales |
               </NavLink>
               <NavLink to={`/$privacy`} onClick={closeMenu}>
-                "footer.privacy"
+                Politique de confidentialité
               </NavLink>
             </motion.div>
           </motion.div>
           <motion.div className="navbar_links_right_left">
             <p>
-              © "footer.copyrightName". {new Date().getFullYear()} |{" "}
-              "footer.siteBy"
+              © STM. {new Date().getFullYear()} | Site réalisé par V. MARCONNET
             </p>
           </motion.div>
         </div>

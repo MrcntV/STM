@@ -38,7 +38,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // Simule un chargement initial de 2 secondes
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 3500);
 
     return () => clearTimeout(timer);
   }, []);

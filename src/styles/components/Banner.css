@@ -3,13 +3,14 @@
   background-color: var(--High-contrast-Text);
   color: var(--Backgroundsection);
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border-radius: var(--border-radius);
 }
 
 /* 📌 Texte */

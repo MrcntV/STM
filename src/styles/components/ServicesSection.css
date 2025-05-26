@@ -3,10 +3,11 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   min-height: 30vh;
   background-color: var(--High-contrast-Text);
   padding: 40px 20px;
+  border-radius: 20px;
 }
 
 /* Titres */

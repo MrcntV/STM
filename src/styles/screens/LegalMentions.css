@@ -1,20 +1,29 @@
-.legal-container {
-  min-width: 100vw;
-  max-width: 100vw;
+.legal-header {
   margin-top: var(--HauteurHeader);
+  width: 100%;
+  padding: 2vw;
+}
+.legal-container {
+  min-width: 50rem;
+  max-width: 50rem;
   color: var(--Backgroundsection);
-  background-color: var(--High-contrast-Text);
 }
 
 .legal-title {
-  font-size: 2.5rem;
+  font-size: 6vw;
   font-weight: bold;
-  color: var(--Backgroundsection);
+  color: var(--High-contrast-Text);
+}
+.legal-titre-secondaire {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--High-contrast-Text);
 }
 
 .legal-intro {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
+  color: var(--High-contrast-Text);
 }
 
 .legal-intro a {
