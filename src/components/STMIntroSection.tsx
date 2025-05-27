@@ -1,0 +1,94 @@
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+const STMIntroSection: React.FC = () => {
+  const sectionRef = useRef(null);
+
+  // Scroll relatif à la section
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  // Applique un déplacement en Y selon la progression
+  const yBackground = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const ySvg = useTransform(scrollYProgress, [0, 1], [0, -40]);
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+    exit: {
+      opacity: 0,
+      y: -50,
+      transition: { duration: 0.6, ease: "easeIn" },
+    },
+  };
+
+  return (
+    <motion.section
+      className="stm-intro-wrapper"
+      ref={sectionRef}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      variants={fadeInUp}
+    >
+      {/* Arrière-plan avec parallaxe */}
+      <motion.div className="stm-intro-background" style={{ y: yBackground }} />
+
+      {/* SVG avec parallaxe plus légère */}
+      <motion.div className="stm-intro-svg" style={{ y: ySvg }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="320 0 1437.52 300"
+          width="60%"
+          height="auto"
+          style={{ maxWidth: "100vw", opacity: 1 }}
+        >
+          <path
+            d="M691.1,137.58h-93.31V48.34h291.6v89.24h-93.31v248.42h-104.98v-248.42Z"
+            stroke="var(--Backgroundsection)"
+            strokeWidth={30}
+            fill="none"
+            strokeMiterlimit={10}
+          />
+          <path
+            d="M889.84,48.43h112.33v49.27c16.18-20.55,32.51-35.17,48.99-43.87,16.48-8.69,36.36-13.03,59.65-13.03,25.06,0,44.9,4.77,59.5,14.3,14.6,9.54,26.54,23.74,35.82,42.59,18.89-22.04,36.11-37.03,51.66-44.98s34.73-11.92,57.57-11.92c33.65,0,59.92,10.76,78.82,32.26,18.89,21.51,28.34,55.15,28.34,100.92v212.02h-120.61v-192.29c0-15.26-2.75-26.59-8.25-34.01-8.06-11.65-18.07-17.48-30.05-17.48-14.14,0-25.53,5.51-34.17,16.53s-12.96,28.72-12.96,53.08v174.19h-120.61v-185.96c0-14.83-.79-24.9-2.37-30.2-2.57-8.47-7.02-15.31-13.35-20.5s-13.75-7.79-22.25-7.79c-13.85,0-25.22,5.62-34.11,16.85-8.9,11.23-13.35,29.67-13.35,55.31v172.28h-120.61V48.43Z"
+            stroke="var(--Backgroundsection)"
+            strokeWidth={30}
+            fill="none"
+            strokeMiterlimit={10}
+          />
+          <path
+            d="M319.66,296.77h163.74c13.91,0,20.64-6.75,20.64-17.85s-6.73-17.37-21.08-17.37h-74.47c-52.49,0-95.1-38.59-95.1-106.6,0-78.15,49.8-106.6,100.04-106.6h185.72v89.24h-160.16c-12.11,0-20.64,4.82-20.64,16.88s8.52,17.85,20.64,17.85h69.98c60.11,0,100.04,38.11,100.04,106.12,0,64.16-44.86,107.57-103.18,107.57h-187.51l1.34-89.24Z"
+            stroke="var(--Backgroundsection)"
+            strokeWidth={30}
+            fill="none"
+            strokeMiterlimit={10}
+          />
+        </svg>
+      </motion.div>
+
+      {/* Contenu principal */}
+      <motion.div className="stm-intro-content" variants={fadeInUp}>
+        <div className="stm-meta">
+          <div className="stm-intro-slogan">
+            <span className="label">Services de Nettoyage</span>
+            <span className="label">Simplicité & Efficacité</span>
+          </div>
+
+          <div className="stm-intro-slogan">
+            <p>Un service de nettoyage professionnel.</p>
+            <p>Depuis 1996 à votre service.</p>
+          </div>
+        </div>
+      </motion.div>
+    </motion.section>
+  );
+};
+
+export default STMIntroSection;

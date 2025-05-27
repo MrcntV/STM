@@ -14,6 +14,7 @@ import "../src/styles/components/ServicesSection.css";
 import "../src/styles/components/Banner.css";
 import "../src/styles/components/Notification.css";
 import "../src/styles/components/AudioPlayer.css";
+import "../src/styles/components/STMIntroSection.css";
 
 import "../src/styles/screens/Accueil.css";
 import "../src/styles/screens/contact.css";

@@ -38,15 +38,15 @@ const RMGservices: React.FC = () => {
       <div className="auto-services-content">
         {/* Image avec animation */}
         <motion.img
-          src="/images/cars/SP1/SP104.jpeg"
-          alt={"services.imageAlt"}
+          src="/images/locaux/image.png"
+          alt={"images local"}
           className="auto-services-image"
         />
 
         {/* Texte avec animations */}
         <motion.div className="auto-services-text" variants={fadeUpVariants}>
-          <h2 className="auto-services-title">{"services.title"}</h2>
-          <p className="auto-services-description">{"services.description"}</p>
+          <h2 className="auto-services-title">Notre local</h2>
+          <p className="auto-services-description">blah blah</p>
           <motion.button
             className="auto-services-button"
             onClick={() => navigate(`/${selectedLang}/services`)}

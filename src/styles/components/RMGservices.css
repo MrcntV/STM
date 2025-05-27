@@ -5,6 +5,8 @@
   min-height: 90vh;
   height: 90vh;
   min-width: 100vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .auto-services-content {

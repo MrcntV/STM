@@ -197,10 +197,10 @@ const MenuBurger: React.FC = () => {
               }
             />
             <motion.div className="navbar_links_right-lien">
-              <NavLink to={`/cgv`} onClick={closeMenu}>
+              <NavLink to={`/mentions-legales`} onClick={closeMenu}>
                 Mentions légales |
               </NavLink>
-              <NavLink to={`/$privacy`} onClick={closeMenu}>
+              <NavLink to={`/politique-de-confidentialite`} onClick={closeMenu}>
                 Politique de confidentialité
               </NavLink>
             </motion.div>

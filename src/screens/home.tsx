@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import RMGservices from "../components/RMGservices";
 import ServicesSection from "../components/ServicesSection";
 import Banner from "../components/Banner";
+import STMIntroSection from "../components/STMIntroSection";
 
 const Home: React.FC = () => {
   return (
@@ -52,7 +53,7 @@ const Home: React.FC = () => {
         <link rel="canonical" href="https://stm-nettoyage.fr" />
       </Helmet>
 
-      <section className="video-container-home"></section>
+      <STMIntroSection />
 
       <RMGservices />
 

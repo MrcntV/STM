@@ -27,7 +27,7 @@ const Headers: React.FC = () => {
     <header
       ref={headerRef} // Associe la référence pour récupérer la hauteur
       id="Header"
-      className={scrolled ? "scrolled" : ""}
+      className="scrolled"
     >
       {/* Conteneur du menu burger */}
       <div className="containerBurger">

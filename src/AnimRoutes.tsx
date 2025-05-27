@@ -21,7 +21,6 @@ const AnimRoutes: React.FC = () => {
           path="/politique-de-confidentialite"
           element={<PolitiqueDeConfidentialite />}
         />
-
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
