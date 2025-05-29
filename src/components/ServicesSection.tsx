@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { motion } from "framer-motion";
 
-import { FaCar, FaSearch, FaStar } from "react-icons/fa";
+import { FaBriefcase, FaBuilding, FaHome } from "react-icons/fa";
 
 const ServicesSection: React.FC = () => {
   // Référence pour détecter la visibilité
@@ -26,24 +26,23 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       id: 1,
-      icon: <FaCar size={50} />,
-      title: "servicesSection.saleTitle",
-      description: "servicesSection.saleDescription",
+      icon: <FaBriefcase size={50} />,
+      title: "Professionnels",
+      description: "Bureaux, commerces et locaux pros.",
     },
     {
       id: 2,
-      icon: <FaSearch size={50} />,
-      title: "servicesSection.searchTitle",
-      description: "servicesSection.searchDescription",
+      icon: <FaBuilding size={50} />,
+      title: "Copropriétés",
+      description: "Entretien des parties communes.",
     },
     {
       id: 3,
-      icon: <FaStar size={50} />,
-      title: "servicesSection.exceptionTitle",
-      description: "servicesSection.exceptionDescription",
+      icon: <FaHome size={50} />,
+      title: "Particuliers",
+      description: "Logements, jardins, débarras.",
     },
   ];
-
   return (
     <motion.div
       ref={ref}
@@ -52,11 +51,12 @@ const ServicesSection: React.FC = () => {
       animate="show"
       exit="exit"
     >
+      <h2 className="services-header">NOS SERVICES</h2>
       {services.map((service, index) => (
         <motion.div
           key={service.id}
           className="service-item"
-          transition={{ delay: index * 0.2 }} // Délai progressif entre chaque service
+          transition={{ delay: index * 0.2 }}
         >
           <motion.div className="service-icon">{service.icon}</motion.div>
           <motion.h3 className="service-title" variants={fadeUpVariants}>

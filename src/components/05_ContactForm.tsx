@@ -105,16 +105,6 @@ const ContactForm: React.FC = () => {
         </AnimatePresence>
       </div>
 
-      {/* Titre du formulaire */}
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="contact-title"
-      >
-        Contactez-nous <span className="highlight">STM</span>
-      </motion.h1>
-
       {/* Formulaire */}
       <motion.form
         ref={form}
@@ -180,7 +170,11 @@ const ContactForm: React.FC = () => {
             onExpired={() => setCaptchaToken(null)}
           />
         </div>
-
+        <p className="rgpd-note">
+          En envoyant ce formulaire, vous acceptez que vos données soient
+          utilisées exclusivement pour vous répondre. Aucune information n’est
+          partagée ni conservée.
+        </p>
         {/* Bouton d'envoi */}
         <div className="submit-button-container">
           <motion.button type="submit" className="submit-button">

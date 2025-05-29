@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 // PAGES
 import Home from "./screens/home";
 import Contact from "./screens/Contact";
+import ServicesPage from "./screens/NosServices";
 import LegalMentions from "./screens/LegalMentions";
 import PolitiqueDeConfidentialite from "./screens/PolitiqueDeConfidentialite";
 
@@ -16,6 +17,8 @@ const AnimRoutes: React.FC = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<ServicesPage />} />
+
         <Route path="/mentions-legales" element={<LegalMentions />} />
         <Route
           path="/politique-de-confidentialite"

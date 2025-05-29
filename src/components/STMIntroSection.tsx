@@ -77,13 +77,13 @@ const STMIntroSection: React.FC = () => {
       <motion.div className="stm-intro-content" variants={fadeInUp}>
         <div className="stm-meta">
           <div className="stm-intro-slogan">
-            <span className="label">Services de Nettoyage</span>
-            <span className="label">Simplicité & Efficacité</span>
-          </div>
-
-          <div className="stm-intro-slogan">
-            <p>Un service de nettoyage professionnel.</p>
-            <p>Depuis 1996 à votre service.</p>
+            <span className="label">
+              Services de Nettoyage{" "}
+              <p>Un service de nettoyage professionnels & particuliers.</p>
+            </span>
+            <span className="label">
+              Simplicité & Efficacité <p>Depuis 1996 à votre service.</p>
+            </span>
           </div>
         </div>
       </motion.div>

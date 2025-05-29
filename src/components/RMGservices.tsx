@@ -45,15 +45,23 @@ const RMGservices: React.FC = () => {
 
         {/* Texte avec animations */}
         <motion.div className="auto-services-text" variants={fadeUpVariants}>
-          <h2 className="auto-services-title">Notre local</h2>
-          <p className="auto-services-description">blah blah</p>
+          <h2 className="auto-services-title">
+            Une expertise locale depuis 1996
+          </h2>
+          <p className="auto-services-description">
+            STM entretient vos locaux depuis 29 ans. <br />
+            Créée en 1996 et reprise en 2012 par Bernard POLLET, STM assure au
+            quotidien le nettoyage et l’entretien de plus de 40 000 m² de locaux
+            professionnels et particuliers (bureaux, parties communes,
+            commerces, etc.) sur l’agglomération de Saint-Étienne.
+          </p>
           <motion.button
             className="auto-services-button"
             onClick={() => navigate(`/${selectedLang}/services`)}
             variants={fadeUpVariants}
             transition={{ delay: 0.2 }}
           >
-            {"services.button"}
+            {"Nos services"}
           </motion.button>
         </motion.div>
       </div>

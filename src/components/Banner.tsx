@@ -1,14 +1,10 @@
 import React, { useRef } from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
 const Banner: React.FC = () => {
-  const navigate = useNavigate();
-  const { lang } = useParams<{ lang?: string }>();
   const location = useLocation(); // Récupération de l'URL pour forcer le re-render
-
-  const selectedLang = lang && ["en", "fr", "de"].includes(lang) ? lang : "fr";
 
   // Référence pour détecter la visibilité
   const ref = useRef(null);
@@ -40,18 +36,32 @@ const Banner: React.FC = () => {
       {/* Animation du texte */}
       <motion.p
         variants={fadeUpVariants}
-        dangerouslySetInnerHTML={{ __html: "banner.text" }}
+        dangerouslySetInnerHTML={{ __html: "ILS NOUS FONT CONFIANCE" }}
       />
-
-      {/* Animation du bouton avec léger délai */}
-      <motion.button
-        className="contact-button"
-        onClick={() => navigate(`/${selectedLang}/contact`)}
-        variants={fadeUpVariants}
-        transition={{ delay: 0.2 }}
-      >
-        {"banner.contact"}
-      </motion.button>
+      <div className="References_logo_container">
+        <a href="https://www.cabinet-tardy.fr/">
+          <img src="/images/references/Cabinet_tardy.png" alt="" />
+        </a>
+        <a href="https://www.century21.fr/">
+          {" "}
+          <img src="/images/references/Century_21.png" alt="" />
+        </a>
+        <a href="https://www.citya.com/">
+          <img src="/images/references/Citya.svg" alt="" />
+        </a>
+        <a href="https://www.immodefrance.com/">
+          <img
+            src="/images/references/Immo_de_france-removebg-preview.png"
+            alt=""
+          />
+        </a>
+        <a href="https://www.guitareavenue.fr/">
+          <img src="/images/references/Guitare_Avenue.avif" alt="" />
+        </a>
+        <a href="https://fr.foncia.com/">
+          <img src="/images/references/logo_foncia.svg" alt="" />
+        </a>
+      </div>
     </motion.div>
   );
 };

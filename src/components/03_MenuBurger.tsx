@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { IoTime } from "react-icons/io5";
 import { motion, useAnimate, stagger } from "framer-motion";
 
 const MenuBurger: React.FC = () => {
@@ -108,7 +109,7 @@ const MenuBurger: React.FC = () => {
 
   const menuItems = [
     { label: "Acceuil", path: `/` },
-    { label: "Nos Services", path: `services` },
+    { label: "Nos Services", path: `/services` },
     { label: "Contact", path: `/contact` },
   ];
 
@@ -142,6 +143,14 @@ const MenuBurger: React.FC = () => {
                   <FaMapMarkerAlt /> {contactAddress}
                 </a>
               </div>
+              <div className="contact-infos">
+                <p>
+                  {" "}
+                  <IoTime />
+                  Horaires : Lundi – Vendredi : 8h00 – 18h00
+                </p>
+              </div>
+
               <div className="contact-infos">
                 <a href={`tel:${contactPhone}`}>
                   {" "}

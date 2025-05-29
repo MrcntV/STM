@@ -1,7 +1,7 @@
 .scroll-to-top-button {
   position: fixed;
   bottom: 20px;
-  color: var(--links);
+  color: #51d467;
   right: 20px;
   border: none;
   border-radius: 50%;

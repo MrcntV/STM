@@ -1,0 +1,141 @@
+/* === Page Nos Services === */
+.services-page {
+  padding: 4rem 2rem;
+  max-width: 80vw;
+
+  margin-top: var(--HauteurHeader);
+}
+
+.services-page h1 {
+  text-align: center;
+  font-size: 7vw;
+
+  color: var(--main-color);
+}
+.services-link-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+}
+/* Intro avec les 3 blocs de navigation */
+.services-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.services-link-block {
+  background: #f7f9fc;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.services-link-block:hover {
+  transform: translateY(-4px);
+}
+
+.services-link-block svg {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.services-link-block span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Section service (professionnel, copropriété, particulier) */
+.service-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+  flex-wrap: wrap;
+}
+
+.service-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.service-content {
+  flex: 1 1 400px;
+}
+
+.service-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.service-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.service-content ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: #444;
+}
+
+.service-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Matériel */
+.materials-section {
+  padding: 3rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.materials-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.materials-section p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .service-section {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .service-image,
+  .service-content {
+    flex: 1 1 100%;
+  }
+
+  .services-link-block {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}

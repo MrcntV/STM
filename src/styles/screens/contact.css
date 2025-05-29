@@ -1,11 +1,14 @@
 .contact-section {
   display: flex;
   min-width: 100vw;
-  min-height: 80vh;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.contact-section h1 {
+  font-size: 7vw;
+  margin-top: var(--HauteurHeader);
 }
 
 .contact-info {
