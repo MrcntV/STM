@@ -35,11 +35,7 @@ const Footer: React.FC = () => {
         <a href={`mailto:${contactEmail}`} style={{ display: "inline-block" }}>
           <p>{contactEmail}</p>
         </a>
-        <p>
-          {" "}
-          <IoTime />
-          Horaires : Lundi – Vendredi : 8h00 – 18h00
-        </p>
+        <p> Horaires : Lundi – Vendredi : 8h00 – 18h00</p>
 
         {/* Réseaux sociaux 
         <div className="VSlide4-menu-social-list">

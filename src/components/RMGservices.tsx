@@ -38,7 +38,7 @@ const RMGservices: React.FC = () => {
       <div className="auto-services-content">
         {/* Image avec animation */}
         <motion.img
-          src="/images/locaux/image.png"
+          src="/images/locaux/local.png"
           alt={"images local"}
           className="auto-services-image"
         />

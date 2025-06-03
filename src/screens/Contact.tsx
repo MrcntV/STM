@@ -59,13 +59,6 @@ const Contact: React.FC = () => {
                 {process.env.REACT_APP_CONTACT_EMAIL}
               </a>
             </p>
-            <div className="Copyright">
-              <p>
-                © {process.env.REACT_APP_COPYRIGHT_NAME}{" "}
-                {currentDate.getFullYear()} | Tous droits reservés |
-              </p>
-              <p>Site réalisé par V. MARCONNET</p>
-            </div>
           </motion.div>
 
           <div className="signature">

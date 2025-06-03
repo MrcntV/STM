@@ -46,6 +46,10 @@ const Banner: React.FC = () => {
           {" "}
           <img src="/images/references/Century_21.png" alt="" />
         </a>
+
+        <a href="https://www.aldi.fr/.html">
+          <img src="/images/references/ALDI.svg" alt="" />
+        </a>
         <a href="https://www.citya.com/">
           <img src="/images/references/Citya.svg" alt="" />
         </a>

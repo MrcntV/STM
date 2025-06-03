@@ -108,8 +108,10 @@ const MenuBurger: React.FC = () => {
   }, [showLinks]);
 
   const menuItems = [
-    { label: "Acceuil", path: `/` },
-    { label: "Nos Services", path: `/services` },
+    { label: "Accueil", path: `/` },
+    { label: "Services professionnels", path: `/services-professionnels` },
+    { label: "Services copropriétés", path: `/services-coproprietes` },
+    { label: "Services particuliers", path: `/services-particuliers` },
     { label: "Contact", path: `/contact` },
   ];
 

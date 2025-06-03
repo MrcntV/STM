@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 6rem;
+  margin-top: var(--HauteurHeader);
   flex-wrap: wrap;
 }
 
@@ -95,8 +95,6 @@
 }
 
 .service-content ul {
-  padding-left: 1rem;
-  list-style-type: disc;
   color: #444;
 }
 
@@ -117,7 +115,6 @@
 }
 
 .materials-section p {
-  color: #444;
   line-height: 1.6;
 }
 

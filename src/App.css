@@ -81,7 +81,7 @@ html.modal-open {
   --BordersAndSeparators: #a9afb5;
   --BorderLight: #a8c4e1;
   --BorderDark: #232c3b;
-  --High-contrast-Text: #237aba;
+  --High-contrast-Text: #0099cc; /* couleurs officielle logo */
   --Medium-contrast-Text: #a9afb5;
   --MutedText: #a8c4e1;
   --Margin: 10px;
@@ -94,7 +94,7 @@ html.modal-open {
   --SecondaryButton: #a8c4e1;
   --HoverEffect: #a9afb5;
   --links: #232c3b;
-  --ButtonHover: #a8c4e17f; /* 50% opacity */
+  --ButtonHover: #ccecff8a;
   --disabledLink: #a9afb5;
   --titre: #232c3b;
 

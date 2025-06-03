@@ -1,0 +1,118 @@
+/* ----- Général ----- */
+.services-page {
+  padding: 4rem 1rem;
+  background-color: var(--Backgroundsection);
+  color: var(--High-contrast-Text);
+}
+
+.materials-section h2 {
+  color: var(--Backgroundsection);
+}
+/* ----- Liens de service ("Vous êtes ?") ----- */
+.services-links {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-link-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.services-link-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+  padding: 0.75rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+/* ----- Section de service ----- */
+.service-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-content {
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.service-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--AccentColor);
+}
+
+.service-content p {
+  margin-bottom: 1rem;
+}
+
+/* ----- Section Matériel ----- */
+.materials-section {
+  background-color: var(--High-contrast-Text);
+  color: var(--Backgroundsection);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.materials-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--AccentColor);
+}
+
+.materials-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+  }
+
+  .service-content {
+    text-align: center;
+  }
+
+  .services-link-block {
+    display: block;
+    margin: 0.75rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page h1 {
+    font-size: 2rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .materials-section {
+    padding: 1.5rem;
+  }
+}

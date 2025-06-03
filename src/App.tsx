@@ -20,6 +20,8 @@ import "../src/styles/screens/Accueil.css";
 import "../src/styles/screens/contact.css";
 import "../src/styles/screens/LegalMentions.css";
 import "../src/styles/screens/ServicesPage.css";
+import "../src/styles/screens/ServicesPro.css";
+import "../src/styles/screens/ServicesPart.css";
 
 // Importation des composants nécessaires
 import Headers from "./components/01_header";
