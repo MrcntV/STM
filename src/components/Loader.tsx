@@ -8,7 +8,7 @@ const Loader: React.FC = () => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 3000); // Total 4s
+    const timer = setTimeout(() => setVisible(false), 2500); // Total 2.5s
     return () => clearTimeout(timer);
   }, []);
 
@@ -39,7 +39,6 @@ const Loader: React.FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{
-              duration: 1,
               ease: "easeInOut",
             }}
           >

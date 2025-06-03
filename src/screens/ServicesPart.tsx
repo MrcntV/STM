@@ -81,6 +81,20 @@ const ServicesPart: React.FC = () => {
               Nous établissons un <strong>devis gratuit personnalisé</strong>{" "}
               sous 24h.
             </p>
+            <div className="seo-section">
+              <h2>Pourquoi faire appel à STM ?</h2>
+              <ul>
+                <li>Entreprise locale et réactive basée à Saint-Étienne</li>
+                <li>
+                  Plus de 20 ans d'expérience dans l'entretien et la propreté
+                </li>
+                <li>Tarifs transparents et devis détaillés</li>
+                <li>Personnel formé, déclaré et assuré</li>
+                <li>
+                  Respect de l'environnement avec produits écoresponsables
+                </li>
+              </ul>
+            </div>
 
             <button className="service-button">Demander un devis</button>
           </div>
@@ -106,17 +120,6 @@ const ServicesPart: React.FC = () => {
             Le Chambon-Feugerolles, Firminy, Saint-Genest-Lerpt,
             Roche-la-Molière, etc.
           </p>
-        </div>
-
-        <div className="seo-section">
-          <h2>Pourquoi faire appel à STM ?</h2>
-          <ul>
-            <li>Entreprise locale et réactive basée à Saint-Étienne</li>
-            <li>Plus de 20 ans d'expérience dans l'entretien et la propreté</li>
-            <li>Tarifs transparents et devis détaillés</li>
-            <li>Personnel formé, déclaré et assuré</li>
-            <li>Respect de l'environnement avec produits écoresponsables</li>
-          </ul>
         </div>
       </motion.section>
     </>

@@ -6,14 +6,14 @@ const ServicesPro: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Nettoyage professionnel à Saint-Étienne | STM</title>
+        <title>Service de nettoyage professionnel à Saint-Étienne | STM</title>
         <meta
           name="description"
-          content="STM propose des services de nettoyage professionnel à Saint-Étienne pour bureaux, entreprises, commerces, laboratoires et cabinets. Service sur mesure, réactif et rigoureux."
+          content="STM propose des services de nettoyage professionnel à Saint-Étienne pour salles de sport, garages, concessions automobiles, cinémas, commerces et établissements recevant du public. Nettoyage régulier ou ponctuel, sur mesure."
         />
         <meta
           name="keywords"
-          content="nettoyage professionnel Saint-Étienne, entretien bureaux entreprises, nettoyage locaux commerciaux, service de propreté Loire, STM nettoyage professionnel"
+          content="nettoyage professionnel Saint-Étienne, nettoyage salle de sport, entretien garage automobile, nettoyage concessionnaire Saint-Étienne, propreté cinéma, nettoyage ERP, entreprise nettoyage commerce Loire, hygiène établissement recevant du public, STM propreté"
         />
       </Helmet>
 
@@ -24,73 +24,91 @@ const ServicesPro: React.FC = () => {
         exit={{ opacity: 0, y: 60 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1>Professionnels</h1>
+        <h1>Professionnel </h1>
 
-        <div className="service-hero">
-          <img
-            src="/images/services/service-pro.png"
-            alt="Nettoyage professionnel Saint-Étienne"
-          />
+        <div className="service-section">
+          <div className="service-image">
+            <img
+              src="/images/services/service-pro.png"
+              alt="Nettoyage professionnel Saint-Étienne"
+            />
+          </div>
+
+          <div className="service-content">
+            <h2>Hygiène et propreté pour vos locaux recevant du public</h2>
+            <p>
+              Avec plus de 20 ans d’expérience, <strong>STM</strong> est le
+              partenaire de confiance des{" "}
+              <strong>
+                entreprises et établissements recevant du public à Saint-Étienne
+              </strong>{" "}
+              et dans la Loire. Nos équipes spécialisées assurent l’
+              <strong>entretien complet de vos locaux professionnels</strong> :
+              commerces, agences, entrepôts, mais aussi lieux à forte affluence
+              comme les <strong>salles de sport</strong>,{" "}
+              <strong>cinémas</strong>, <strong>garages automobiles</strong> ou{" "}
+              <strong>concessions</strong>.
+            </p>
+            <p>
+              Nous proposons des <strong>prestations sur mesure</strong>,
+              régulières ou ponctuelles, pour garantir la propreté, la sécurité
+              sanitaire et l’image de votre structure auprès de votre clientèle
+              et de vos collaborateurs.
+            </p>
+            <ul>
+              <li>Nettoyage de showroom, réception et bureaux</li>
+              <li>
+                Entretien de salles de sport : machines, vestiaires, douches
+              </li>
+              <li>Nettoyage de parkings, ateliers et halls d’exposition</li>
+              <li>Dépoussiérage de mobilier et équipements électroniques</li>
+              <li>Lavage de vitres, vitrines, enseignes et accès vitrés</li>
+              <li>Traitement des sols : aspiration, monobrosse, décapage</li>
+              <li>
+                Désinfection des zones de contact : poignées, sanitaires,
+                comptoirs
+              </li>
+            </ul>
+
+            <p>
+              Tous nos agents sont <strong>formés, équipés et discrets</strong>,
+              avec une{" "}
+              <strong>
+                intervention possible en dehors des heures d’ouverture
+              </strong>
+              .
+            </p>
+
+            <div className="seo-section">
+              <h2>STM, votre expert propreté à Saint-Étienne</h2>
+              <ul>
+                <li>Spécialiste du nettoyage pour les ERP et commerces</li>
+                <li>Contrats d’entretien personnalisés selon vos horaires</li>
+                <li>Service réactif et suivi qualité permanent</li>
+                <li>Matériel haute performance pour résultats durables</li>
+                <li>Prestations écoresponsables sur demande</li>
+              </ul>
+            </div>
+
+            <button className="service-button">Demander un devis</button>
+          </div>
         </div>
 
-        <div className="service-content">
+        <div className="materials-section">
+          <h2>Des moyens techniques professionnels</h2>
           <p>
+            Notre flotte (Fiat Scudo, Opel Combo) est équipée pour assurer une
+            logistique fluide et ponctuelle. Nos techniciens disposent de{" "}
             <strong>
-              Vous êtes une entreprise, un commerce, un cabinet médical ou un
-              espace industriel ?
+              monobrosses, aspirateurs industriels, balayeuses et nettoyeurs
+              haute pression
             </strong>{" "}
-            STM vous accompagne avec une offre de nettoyage sur mesure, discrète
-            et efficace.
+            adaptés aux grandes surfaces ou zones complexes.
           </p>
           <p>
-            Basés à Saint-Étienne, nous intervenons rapidement sur l'ensemble de
-            la Loire. Nos équipes expérimentées assurent un entretien
-            irréprochable de vos locaux selon un cahier des charges strictement
-            défini avec vous.
+            Nous intervenons à Saint-Étienne, La Talaudière,
+            Andrézieux-Bouthéon, Firminy, Saint-Chamond, et dans toute la Loire.
           </p>
-
-          <h2>Nos prestations</h2>
-          <ul>
-            <li>
-              Nettoyage et désinfection de bureaux, open space et locaux
-              partagés
-            </li>
-            <li>Entretien des sanitaires, cuisines et espaces de pause</li>
-            <li>Lavage de vitres, même en hauteur ou accès difficile</li>
-            <li>Remise en état après travaux ou sinistres</li>
-            <li>Décapage des sols, lessivage des murs</li>
-            <li>
-              Dépoussiérage de matériel informatique, mobilier et équipements
-            </li>
-            <li>Gestion des déchets et vidage des poubelles</li>
-            <li>Débarras d'encombrants et nettoyage en profondeur</li>
-          </ul>
-
-          <h2>Pourquoi choisir STM ?</h2>
-          <ul>
-            <li>Un interlocuteur unique et réactif</li>
-            <li>
-              Des agents formés, discrets et respectueux des normes d'hygiène
-            </li>
-            <li>Des produits écologiques et respectueux de l’environnement</li>
-            <li>
-              Un suivi qualité régulier et des ajustements possibles à tout
-              moment
-            </li>
-            <li>
-              Une flexibilité d’intervention selon vos horaires et contraintes
-            </li>
-          </ul>
-
-          <h2>Demandez votre devis personnalisé</h2>
-          <p>
-            N'hésitez pas à nous contacter pour une étude gratuite de vos
-            besoins. Notre équipe se déplace sur site afin d'évaluer les
-            spécificités de vos locaux et établir une proposition claire et
-            transparente.
-          </p>
-
-          <button className="service-button">Demander un devis</button>
         </div>
       </motion.section>
     </>

@@ -47,7 +47,7 @@ header.scrolled {
   justify-content: flex-end;
 }
 .containerlogo a {
-  height: 100%;
+  height: calc(var(--HauteurHeader) - 20px);
   width: auto;
 }
 

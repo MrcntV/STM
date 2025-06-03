@@ -37,7 +37,7 @@ const Headers: React.FC = () => {
       {/* Logo principal avec lien vers la page d'accueil */}
       <div className="containerlogo">
         <a className="LinkHome" href="/">
-          <img src="/images/logo/logo.png" alt="logo race motors group" />
+          <img src="/images/logo/LogoSTM.png" alt="logo race motors group" />
         </a>
       </div>
       <div className="containerlogo">
