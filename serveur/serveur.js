@@ -9,7 +9,7 @@ const app = express();
 const PORT = 4242;
 
 // Dossier des fichiers buildés
-const staticPath = path.join(__dirname, "build");
+const staticPath = path.join(__dirname, "../build");
 
 app.use(express.static(staticPath));
 
