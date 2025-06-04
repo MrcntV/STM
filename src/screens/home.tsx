@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import RMGservices from "../components/RMGservices";
+import Services from "../components/Services";
 import ServicesSection from "../components/ServicesSection";
 import Banner from "../components/Banner";
 import STMIntroSection from "../components/STMIntroSection";
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
 
       <STMIntroSection />
 
-      <RMGservices />
+      <Services />
 
       <ServicesSection />
 

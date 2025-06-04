@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const RMGservices: React.FC = () => {
+const Services: React.FC = () => {
   const navigate = useNavigate();
   const { lang } = useParams<{ lang?: string }>();
 
@@ -69,4 +69,4 @@ const RMGservices: React.FC = () => {
   );
 };
 
-export default RMGservices;
+export default Services;

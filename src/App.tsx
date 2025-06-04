@@ -9,7 +9,7 @@ import "../src/styles/components/MenuBurger.css";
 import "../src/styles/components/ScrollToTopButton.css";
 import "../src/styles/components/Button.css";
 import "../src/styles/components/Loader.css";
-import "../src/styles/components/RMGservices.css";
+import "../src/styles/components/Services.css";
 import "../src/styles/components/ServicesSection.css";
 import "../src/styles/components/Banner.css";
 import "../src/styles/components/Notification.css";

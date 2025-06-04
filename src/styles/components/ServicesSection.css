@@ -87,7 +87,7 @@
 @media (max-width: 480px) {
   .services-container {
     gap: 15px;
-    padding: 20px 5px;
+    padding: var(--Margin);
   }
 
   .service-item {

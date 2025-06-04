@@ -40,6 +40,10 @@
   max-width: var(--MaxWidthBanner);
   padding-bottom: 0;
 }
+.banner h2 {
+  text-align: center;
+  font-size: clamp(2.2rem, 4vw, 2.7rem);
+}
 
 /* 📌 Mises en valeur */
 .bold {
@@ -50,6 +54,32 @@
   font-weight: 700;
 }
 
+.banderole-inner {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .banderole-inner {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    align-items: center;
+  }
+  .banderole-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+
+  .banderole-inner img {
+    max-height: 150px;
+    max-width: 150px;
+    height: auto;
+    width: auto;
+  }
+  .References_logo_container {
+    display: none;
+  }
+}
 /* ✅ Responsive Design */
 @media (max-width: 1024px) {
   .banner {
@@ -62,11 +92,36 @@
     font-size: clamp(1.1rem, 2.5vw, 1.4rem);
     padding: 0;
   }
+
+  .banderole-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+
+  .banderole-inner {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    align-items: center;
+  }
+
+  .banderole-inner img {
+    max-height: 125px;
+    max-width: 125px;
+    height: auto;
+    width: auto;
+  }
+
+  .References_logo_container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .banner {
-    min-height: 25vh;
+    min-height: 30vh;
+    height: 30vh;
     padding: 10px;
     justify-content: space-around;
   }

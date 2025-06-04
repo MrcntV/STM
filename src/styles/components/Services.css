@@ -51,6 +51,17 @@
 
 /* ✅ Responsive Design */
 @media (max-width: 1024px) {
+  .auto-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    height: auto;
+    min-width: 100vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .auto-services-content {
     flex-direction: column;
     text-align: center;

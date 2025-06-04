@@ -1,15 +1,13 @@
+"use client";
+
 import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
-
 import { motion } from "framer-motion";
 
 const Banner: React.FC = () => {
-  const location = useLocation(); // Récupération de l'URL pour forcer le re-render
-
-  // Référence pour détecter la visibilité
+  const location = useLocation();
   const ref = useRef(null);
 
-  // **Variants d'animation (montée douce)**
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 20 },
     show: {
@@ -24,47 +22,97 @@ const Banner: React.FC = () => {
     },
   };
 
+  const logos = [
+    {
+      href: "https://www.cabinet-tardy.fr/",
+      src: "/images/references/Cabinet_tardy.png",
+      alt: "Cabinet Tardy - partenaire nettoyage copropriétés",
+    },
+    {
+      href: "https://www.century21.fr/",
+      src: "/images/references/Century_21.png",
+      alt: "Century 21 - agence immobilière partenaire nettoyage",
+    },
+    {
+      href: "https://www.aldi.fr/.html",
+      src: "/images/references/ALDI.svg",
+      alt: "ALDI - grande surface faisant confiance à STM",
+    },
+    {
+      href: "https://www.citya.com/",
+      src: "/images/references/Citya.svg",
+      alt: "Citya - gestionnaire de copropriétés à Saint-Étienne",
+    },
+    {
+      href: "https://www.immodefrance.com/",
+      src: "/images/references/Immo_de_france-removebg-preview.png",
+      alt: "Immo de France - partenaire entretien immeubles",
+    },
+    {
+      href: "https://www.guitareavenue.fr/",
+      src: "/images/references/Guitare_Avenue.avif",
+      alt: "Guitare Avenue - magasin faisant appel à STM pour le ménage",
+    },
+    {
+      href: "https://fr.foncia.com/",
+      src: "/images/references/logo_foncia.svg",
+      alt: "Foncia - syndic partenaire de l’entreprise STM",
+    },
+  ];
+
   return (
     <motion.div
-      key={location.pathname} // ⚡ Force le re-render à chaque changement de page
+      key={location.pathname}
       ref={ref}
       className="banner"
       initial="hidden"
       animate="show"
       exit="exit"
     >
-      {/* Animation du texte */}
-      <motion.p
+      <motion.h2
         variants={fadeUpVariants}
-        dangerouslySetInnerHTML={{ __html: "ILS NOUS FONT CONFIANCE" }}
+        dangerouslySetInnerHTML={{
+          __html: "ILS NOUS FONT CONFIANCE",
+        }}
       />
-      <div className="References_logo_container">
-        <a href="https://www.cabinet-tardy.fr/">
-          <img src="/images/references/Cabinet_tardy.png" alt="" />
-        </a>
-        <a href="https://www.century21.fr/">
-          {" "}
-          <img src="/images/references/Century_21.png" alt="" />
-        </a>
 
-        <a href="https://www.aldi.fr/.html">
-          <img src="/images/references/ALDI.svg" alt="" />
-        </a>
-        <a href="https://www.citya.com/">
-          <img src="/images/references/Citya.svg" alt="" />
-        </a>
-        <a href="https://www.immodefrance.com/">
-          <img
-            src="/images/references/Immo_de_france-removebg-preview.png"
-            alt=""
-          />
-        </a>
-        <a href="https://www.guitareavenue.fr/">
-          <img src="/images/references/Guitare_Avenue.avif" alt="" />
-        </a>
-        <a href="https://fr.foncia.com/">
-          <img src="/images/references/logo_foncia.svg" alt="" />
-        </a>
+      {/* Mode responsive fixe */}
+      <div
+        className="References_logo_container"
+        aria-label="Références clients STM"
+      >
+        {logos.map((logo, idx) => (
+          <a
+            href={logo.href}
+            key={idx}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={logo.alt}
+          >
+            <img src={logo.src} alt={logo.alt} />
+          </a>
+        ))}
+      </div>
+
+      {/* Bande défilante dès 1024px */}
+      <div className="banderole-wrapper" aria-hidden="true">
+        <motion.div
+          className="banderole-inner"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+        >
+          {[...logos, ...logos].map((logo, idx) => (
+            <a
+              href={logo.href}
+              key={`scroll-${idx}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={logo.alt}
+            >
+              <img src={logo.src} alt={logo.alt} />
+            </a>
+          ))}
+        </motion.div>
       </div>
     </motion.div>
   );
