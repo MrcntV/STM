@@ -56,7 +56,7 @@ const ServicesSection: React.FC = () => {
       aria-labelledby="services-title"
     >
       <h2 className="services-header" id="services-title">
-        Nos services
+        NOS SERVICES
       </h2>
 
       <div className="services-container">

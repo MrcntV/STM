@@ -8,6 +8,9 @@
   max-width: 50rem;
   color: var(--Backgroundsection);
 }
+.legal-container p {
+  color: var(--Medium-contrast-Text);
+}
 
 .legal-title {
   font-size: 6vw;

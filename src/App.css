@@ -24,6 +24,15 @@
 @font-face {
   font-family: "BlauerNue";
 
+  src: url("styles/font/TrueType/BlauerNue-Light.woff2") format("woff2"),
+    url("styles/font/TrueType/BlauerNue-Light.woff") format("woff"),
+    url("styles/font/TrueType/BlauerNue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BlauerNueBold";
+
   src: url("styles/font/TrueType/BlauerNue-Bold.woff2") format("woff2"),
     url("styles/font/TrueType/BlauerNue-Bold.woff") format("woff"),
     url("styles/font/TrueType/BlauerNue-Bold.ttf") format("truetype");
@@ -83,7 +92,7 @@ html.modal-open {
   --BorderLight: #a8c4e1;
   --BorderDark: #232c3b;
   --High-contrast-Text: #0099cc; /* couleurs officielle logo */
-  --Medium-contrast-Text: #a9afb5;
+  --Medium-contrast-Text: #444;
   --MutedText: #a8c4e1;
   --Margin: 10px;
   --PaddingMobile: 24px 24px 24px 24px;
@@ -162,6 +171,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "BlauerNueBold";
   letter-spacing: -0.3px;
   line-height: 1em;
 }
@@ -281,6 +291,15 @@ p {
   text-align: left;
   padding-bottom: 1em;
   font-size: var(--font-size-small);
+  line-height: 1.5;
+}
+
+strong {
+  color: var(--Medium-contrast-Text);
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  font-family: "BlauerNueBold";
   line-height: 1.5;
 }
 

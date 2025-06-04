@@ -88,13 +88,12 @@
 
 .service-content p {
   font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 1rem;
+  font-weight: 100;
+  color: var(--Medium-contrast-Text);
 }
 
 .service-content ul {
-  color: #444;
+  color: var(--Medium-contrast-Text);
 }
 
 .service-content ul li {

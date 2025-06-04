@@ -1,13 +1,10 @@
 import React, { useRef } from "react";
 
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Services: React.FC = () => {
   const navigate = useNavigate();
-  const { lang } = useParams<{ lang?: string }>();
-
-  const selectedLang = lang && ["en", "fr", "de"].includes(lang) ? lang : "fr";
 
   // Référence pour détecter la visibilité
   const ref = useRef(null);
@@ -57,7 +54,7 @@ const Services: React.FC = () => {
           </p>
           <motion.button
             className="auto-services-button"
-            onClick={() => navigate(`/${selectedLang}/services`)}
+            onClick={() => navigate(`/services`)}
             variants={fadeUpVariants}
             transition={{ delay: 0.2 }}
           >

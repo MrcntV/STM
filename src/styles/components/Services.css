@@ -47,6 +47,7 @@
   ); /* ✅ Texte adaptatif */
   line-height: 1.6;
   margin-top: 20px;
+  color: var(--Medium-contrast-Text);
 }
 
 /* ✅ Responsive Design */

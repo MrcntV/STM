@@ -61,11 +61,6 @@
 .service-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--AccentColor);
-}
-
-.service-content p {
-  margin-bottom: 1rem;
 }
 
 /* ----- Section Matériel ----- */
