@@ -23,106 +23,107 @@ const LegalMentions: React.FC = () => {
           MENTIONS LÉGALES
         </motion.h1>
       </motion.div>
+
       <motion.section
         className="legal-container"
         initial="hidden"
         animate="show"
         exit="hidden"
       >
-        <motion.p
+        <motion.div
           variants={fadeInVariants}
           className="legal-intro legal-section-0"
         >
-          Mise à jour : 5 Mai, 2025
-          <br />
-          <br />
+          <p>
+            <strong>Mise à jour :</strong> 5 Mai, 2025
+          </p>
+
           <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 1. Éditeur du site</strong>{" "}
+            <strong>1. Éditeur du site</strong>
           </h2>
-          <p className="">
-            <br />
+          <p>
             Ce site est édité par :
             <br />
             <strong>Raison sociale :</strong> Vincent-Nicolas Marconnet
             <br />
-            Forme juridique : Auto-entrepreneur
+            <strong>Forme juridique :</strong> Auto-entrepreneur
             <br />
-            Siège social : 18 bis route de Bellegarde - 42330 Saint-Galmier
+            <strong>Siège social :</strong> 18 bis route de Bellegarde - 42330
+            Saint-Galmier
             <br />
-            SIRET : 980 5868 2000 0014
+            <strong>SIRET :</strong> 980 5868 2000 0014
             <br />
-            TVA : Non applicable selon article 293 B du CGI
+            <strong>TVA :</strong> Non applicable selon article 293 B du CGI
             <br />
-            Responsable de publication : Vincent-Nicolas Marconnet
+            <strong>Responsable de publication :</strong> Vincent-Nicolas
+            Marconnet
             <br />
-            Email : contact@stm-nettoyage.fr
-            <br />
+            <strong>Email :</strong>{" "}
+            <a href="mailto:contact@stm-nettoyage.fr">
+              contact@stm-nettoyage.fr
+            </a>
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 2. Hébergement</strong>
-          </h2>{" "}
-          <p className="">
-            <br />
-            Ce site est hébergé par : Hostinger — https://www.hostinger.com
-            <br />
-          </p>
-          <br />
-          <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 3. Propriété intellectuelle </strong>
-          </h2>
-          <p className="">
-            <br />
-            Tous les contenus présents sur le site (textes, images, vidéos,
-            design, code...) sont la propriété exclusive de STM ou font l’objet
-            d’autorisations spécifiques. Toute reproduction est interdite sans
-            accord préalable.
-            <br />
-          </p>
-          <br />
-          <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 4. Responsabilité</strong>
-          </h2>{" "}
-          <br />
-          <p>
-            STM ne saurait être tenu responsable de l’usage fait du site ou des
-            erreurs éventuelles dans le contenu.
-            <br />
-          </p>
-          <br />
-          <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 5. Données personnelles</strong>
+            <strong>2. Hébergement</strong>
           </h2>
           <p>
-            <br />
-            Aucune donnée personnelle n’est collectée via le site.
-            <br />
+            Ce site est hébergé par : <strong>Hostinger</strong> —{" "}
+            <a
+              href="https://www.hostinger.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.hostinger.com
+            </a>
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
-            {" "}
-            <strong> 6. Cookies</strong>
-          </h2>{" "}
+            <strong>3. Propriété intellectuelle</strong>
+          </h2>
           <p>
+            Tous les contenus présents sur le site (
+            <strong>textes, images, vidéos, design, code</strong>...) sont la
+            propriété exclusive de <strong>STM</strong> ou font l’objet
+            d’autorisations spécifiques.
             <br />
-            Le site n’utilise aucun cookie de suivi, marketing ou publicitaire.
+            <strong>Toute reproduction est interdite</strong> sans accord
+            préalable.
+          </p>
+
+          <h2 className="legal-titre-secondaire">
+            <strong>4. Responsabilité</strong>
+          </h2>
+          <p>
+            <strong>STM</strong> ne saurait être tenu responsable de l’usage
+            fait du site ou des erreurs éventuelles dans le contenu.
+          </p>
+
+          <h2 className="legal-titre-secondaire">
+            <strong>5. Données personnelles</strong>
+          </h2>
+          <p>
+            <strong>Aucune donnée personnelle</strong> n’est collectée via le
+            site.
+          </p>
+
+          <h2 className="legal-titre-secondaire">
+            <strong>6. Cookies</strong>
+          </h2>
+          <p>
+            Le site <strong>n’utilise aucun cookie</strong> de suivi, marketing
+            ou publicitaire.
             <br />
-            <br />
-            Pour plus d'informations sur vos droits, consultez :
+            Pour plus d'informations sur vos droits, consultez :{" "}
             <a
               href="https://www.cnil.fr/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CNIL.fr
-            </a>{" "}
+              <strong>CNIL.fr</strong>
+            </a>
           </p>
-        </motion.p>
+        </motion.div>
       </motion.section>
     </>
   );

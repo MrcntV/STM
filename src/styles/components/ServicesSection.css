@@ -6,11 +6,24 @@
   width: 100%;
   min-height: 40vh;
   background-color: var(--High-contrast-Text);
-  padding: 40px 20px;
+
+  color: var(--Backgroundsection);
+}
+
+.services-container-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 40vh;
+  background-color: var(--High-contrast-Text);
   color: var(--Backgroundsection);
 }
 
 .services-container h2 {
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
   color: var(--Backgroundsection);
@@ -73,7 +86,7 @@
 }
 
 @media (max-width: 768px) {
-  .services-container {
+  .services-container-items {
     flex-direction: column;
     gap: 20px;
     padding: var(--Margin) 10px;

@@ -31,99 +31,105 @@ const PolitiqueDeConfidentialite: React.FC = () => {
         animate="show"
         exit="hidden"
       >
-        <motion.p
+        <motion.div
           variants={fadeInVariants}
           className="legal-intro legal-section-0"
         >
-          Mise à jour : 5 Mai, 2025
-          <br />
-          <br />
+          <p>
+            <strong>Mise à jour :</strong> 5 Mai, 2025
+          </p>
+
           <h2 className="legal-titre-secondaire">
             <strong>1. Responsable du traitement</strong>
           </h2>
           <p>
+            <strong>Vincent-Nicolas Marconnet</strong>
             <br />
-            Vincent-Nicolas Marconnet
+            <strong>Auto-entrepreneur</strong>
             <br />
-            Auto-entrepreneur
+            <strong>Adresse :</strong> 18 bis route de Bellegarde, 42330
+            Saint-Galmier
             <br />
-            18 bis route de Bellegarde, 42330 Saint-Galmier
+            <strong>SIRET :</strong> 980 5868 2000 0014
             <br />
-            SIRET : 980 5868 2000 0014
-            <br />
-            Email : contact@stm-nettoyage.fr
+            <strong>Email :</strong>{" "}
+            <a href="mailto:contact@stm-nettoyage.fr">
+              contact@stm-nettoyage.fr
+            </a>
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>2. Données collectées</strong>
           </h2>
           <p>
+            <strong>Aucune donnée personnelle</strong> n'est collectée par le
+            site.
             <br />
-            Aucune donnée personnelle n'est collectée par le site.
-            <br />
-            Aucune inscription, connexion ou formulaire n'est proposé.
+            <strong>Aucun formulaire, inscription ou connexion</strong> n'est
+            proposé.
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>3. Analyse statistique</strong>
           </h2>
           <p>
+            Le site <strong>n'utilise aucun cookie</strong> ni outil d'analyse
+            statistique.
             <br />
-            Le site n'utilise pas d'analyse de statistiques, ni de cookies.
+            Les <strong>adresses IP</strong> ne sont ni stockées ni recoupées.
             <br />
-            Les adresses IP ne sont ni stockées ni recoupées.
-            <br />
-            Aucune information permettant d'identifier un utilisateur n'est
-            collectée.
+            Aucune information permettant d'
+            <strong>identifier un utilisateur</strong> n'est collectée.
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>4. Vos droits</strong>
           </h2>
           <p>
-            <br />
-            Conformément au RGPD, vous disposez des droits suivants :
-            <br />
-            - Droit à l'information
-            <br />
-            - Droit d'accès, de rectification ou d'effacement (non applicable
-            ici car aucune donnée personnelle n'est collectée)
-            <br />
-            Contact : contact@stm-nettoyage.fr
+            Conformément au <strong>RGPD</strong>, vous disposez des droits
+            suivants :
+            <ul>
+              <li>
+                <strong>Droit à l'information</strong>
+              </li>
+              <li>
+                <strong>Droit d'accès, de rectification ou d'effacement</strong>{" "}
+                (non applicable ici)
+              </li>
+            </ul>
+            <strong>Contact :</strong>{" "}
+            <a href="mailto:contact@stm-nettoyage.fr">
+              contact@stm-nettoyage.fr
+            </a>
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>5. Sécurité</strong>
           </h2>
           <p>
-            <br />
-            Le site est sécurisé via HTTPS.
-            <br />
-            Aucun tiers publicitaire ou traqueur n'est utilisé.
+            Le site est sécurisé via <strong>HTTPS</strong>.<br />
+            <strong>Aucun tiers publicitaire ou traqueur</strong> n’est utilisé.
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>6. Modifications</strong>
           </h2>
           <p>
-            <br />
             Cette politique peut évoluer.
             <br />
-            Toute mise à jour sera indiquée sur cette page avec la date de
-            révision.
+            Toute mise à jour sera indiquée avec la date de révision.
           </p>
-          <br />
+
           <h2 className="legal-titre-secondaire">
             <strong>7. Droit applicable</strong>
           </h2>
           <p>
-            <br />
             Les présentes conditions sont soumises au droit français.
             <br />
             En cas de litige, les tribunaux compétents seront ceux de
             Saint-Étienne.
           </p>
-        </motion.p>
+        </motion.div>
       </motion.section>
     </>
   );

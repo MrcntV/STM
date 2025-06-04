@@ -59,7 +59,7 @@ const ServicesSection: React.FC = () => {
         NOS SERVICES
       </h2>
 
-      <div className="services-container">
+      <div className="services-container-items">
         {services.map((service, index) => (
           <motion.article
             key={service.id}
