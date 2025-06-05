@@ -24,7 +24,7 @@ export default function AnimatedSTM() {
         id="Calque_2"
         data-name="Calque 2"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1258.32 446.45"
+        viewBox="0 0 1258.32 456.45"
         initial="hidden"
         animate="visible"
         width="100%"
