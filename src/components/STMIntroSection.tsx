@@ -43,52 +43,60 @@ const STMIntroSection: React.FC = () => {
       <motion.div className="stm-intro-background" style={{ y: yBackground }} />
 
       {/* SVG avec parallaxe plus légère */}
+
       <motion.div className="stm-intro-svg" style={{ y: ySvg }}>
         <LogoIntro />
-        <motion.div
-          className="etude-logo"
-          initial={{ scale: 0.2, opacity: 0, rotate: 0 }}
-          animate={{
-            scale: 1,
-            opacity: 1,
-            rotate: 360,
-            transition: {
-              rotate: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 20,
-                ease: "linear",
-              },
-              duration: 1.2,
-              ease: "easeOut",
-            },
-          }}
-          style={{ display: "inline-block" }}
-        >
-          <LogoEtude />
-        </motion.div>
+        <div className="stm-intro-svg-wrapper">
+          <motion.div className="stm-intro-content">
+            <h1 className="stm-intro-title">
+              Une expertise locale depuis 1996
+            </h1>
+            <p className="stm-intro-text">
+              STM entretient vos locaux depuis 29 ans. <br />
+              Créée en 1996 et reprise en 2012 par Bernard POLLET, STM assure au
+              quotidien le nettoyage et l’entretien de plus de 40 000 m² de
+              locaux professionnels et particuliers (bureaux, parties communes,
+              commerces, etc.) sur l’agglomération de Saint-Étienne.
+            </p>
+          </motion.div>
+        </div>
       </motion.div>
 
       {/* Contenu principal */}
-      <motion.div className="stm-intro-content" variants={fadeInUp}>
-        <div className="stm-meta">
-          <div className="stm-intro-slogan">
-            <span className="label">
-              Services de nettoyage
-              <p>
-                Nettoyage <strong>professionnel</strong> &{" "}
-                <strong>particulier</strong>, sur-mesure et efficace.
-              </p>
-            </span>
-            <span className="label">
-              Simplicité & efficacité
-              <p>
-                À votre service depuis <strong>1996</strong>.
-              </p>
-            </span>
-          </div>
+
+      <div className="stm-meta">
+        <div className="stm-intro-slogan">
+          <span className="label">
+            Services de nettoyage
+            <p>
+              Nettoyage <strong>professionnel</strong> &{" "}
+              <strong>particulier</strong>, sur-mesure et efficace.
+            </p>
+          </span>
+          <motion.div
+            className="etude-logo"
+            initial={{ scale: 0.2, opacity: 0, rotate: 0 }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+              rotate: 360,
+              transition: {
+                rotate: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 20,
+                  ease: "linear",
+                },
+                duration: 1.2,
+                ease: "easeOut",
+              },
+            }}
+            style={{ display: "inline-block" }}
+          >
+            <LogoEtude />
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 };

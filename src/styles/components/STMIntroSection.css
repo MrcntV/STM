@@ -21,10 +21,40 @@
   flex-direction: row;
 }
 
+.LogoIntro {
+  width: 40%;
+}
+.stm-intro-svg-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.stm-intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--Backgroundsection);
+  width: 100%;
+  padding: 2rem;
+}
+.stm-intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--Margin);
+  color: var(--Backgroundsection);
+}
+.stm-intro-content p {
+  font-size: 1.3rem;
+  color: var(--Backgroundsection);
+}
+
 .etude-logo {
   width: 100%;
   height: 100%;
-  max-width: 300px;
+  max-width: 200px;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
@@ -43,16 +73,9 @@
   transform: scale(1.05);
 }
 
-.stm-intro-content {
-  position: relative;
-  z-index: 1;
-
-  width: 100%;
-  text-align: center;
-}
-
 .stm-meta {
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -71,7 +94,6 @@
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
   color: var(--Backgroundsection);
   padding: 0;
 }
@@ -84,6 +106,13 @@
   text-align: center;
   width: 50%;
   font-size: 2vw;
+}
+.label p {
+  font-size: 1rem;
+  text-align: center;
+}
+.label strong {
+  color: var(--Backgroundsection);
 }
 
 .cls-1 {
@@ -101,7 +130,7 @@
 
 .cls-3,
 .cls-4 {
-  fill: #237aba;
+  fill: var(--High-contrast-Text);
 }
 
 .cls-5 {
