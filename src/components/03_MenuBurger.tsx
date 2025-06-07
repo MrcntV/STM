@@ -146,11 +146,11 @@ const MenuBurger: React.FC = () => {
                 </a>
               </div>
               <div className="contact-infos">
-                <p>
+                <a href="">
                   {" "}
                   <IoTime />
                   Horaires : Lundi – Vendredi : 8h00 – 18h00
-                </p>
+                </a>
               </div>
 
               <div className="contact-infos">

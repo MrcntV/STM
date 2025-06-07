@@ -21,4 +21,8 @@
 .loader-text {
   position: absolute;
   bottom: var(--Margin);
+  font-size: 0.7rem;
+}
+.loader-text p {
+  font-size: 0.7rem;
 }
