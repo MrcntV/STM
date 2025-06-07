@@ -109,6 +109,7 @@ const ServicesPro: React.FC = () => {
             Nous intervenons à Saint-Étienne, La Talaudière,
             Andrézieux-Bouthéon, Firminy, Saint-Chamond, et dans toute la Loire.
           </p>
+          <img src="/images/locaux/VoitureSTM.png" alt="" />
         </div>
       </motion.section>
     </>

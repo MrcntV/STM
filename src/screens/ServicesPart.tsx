@@ -120,6 +120,7 @@ const ServicesPart: React.FC = () => {
             Le Chambon-Feugerolles, Firminy, Saint-Genest-Lerpt,
             Roche-la-Molière, etc.
           </p>
+          <img src="/images/locaux/VoitureSTM.png" alt="" />
         </div>
       </motion.section>
     </>

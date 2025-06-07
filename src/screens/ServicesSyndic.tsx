@@ -135,6 +135,7 @@ const ServicesSyndic: React.FC = () => {
             sur toute la métropole stéphanoise, y compris dans les zones à accès
             restreint.
           </p>
+          <img src="/images/locaux/VoitureSTM.png" alt="" />
         </div>
       </motion.section>
     </>

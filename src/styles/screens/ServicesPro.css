@@ -10,6 +10,10 @@
   margin-bottom: 1rem;
   color: var(--Backgroundsection);
 }
+
+.materials-section strong {
+  color: var(--Backgroundsection);
+}
 /* ----- Liens de service ("Vous êtes ?") ----- */
 .services-links {
   text-align: center;
@@ -72,6 +76,10 @@
   max-width: 900px;
   margin-top: 2rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .materials-section h3 {
@@ -82,7 +90,14 @@
 
 .materials-section p {
   font-size: 1rem;
+  text-align: left;
   line-height: 1.6;
+}
+.materials-section img {
+  margin-top: var(--Margin);
+  width: 90%;
+  border-radius: var(--border-radius);
+  opacity: 0.95;
 }
 
 /* ----- Responsive ----- */
@@ -116,5 +131,11 @@
 
   .materials-section {
     padding: 1.5rem;
+  }
+  .materials-section img {
+    margin-top: var(--Margin);
+    width: 100%;
+    border-radius: var(--border-radius);
+    opacity: 0.95;
   }
 }
