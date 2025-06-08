@@ -6,17 +6,59 @@ const ServicesPro: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Service de nettoyage professionnel à Saint-Étienne | STM</title>
+        <title>Nettoyage professionnel à Saint-Étienne – STM</title>
         <meta
           name="description"
-          content="STM propose des services de nettoyage professionnel à Saint-Étienne pour salles de sport, garages, concessions automobiles, cinémas, commerces et établissements recevant du public. Nettoyage régulier ou ponctuel, sur mesure."
+          content="Nettoyage de salles de sport, commerces, garages, bureaux et ERP : STM propose un service professionnel, sur mesure et réactif à Saint-Étienne et dans la Loire."
         />
         <meta
           name="keywords"
-          content="nettoyage professionnel Saint-Étienne, nettoyage salle de sport, entretien garage automobile, nettoyage concessionnaire Saint-Étienne, propreté cinéma, nettoyage ERP, entreprise nettoyage commerce Loire, hygiène établissement recevant du public, STM propreté"
+          content="nettoyage professionnel Saint-Étienne, entreprise nettoyage ERP, propreté bureaux commerces, entretien garage auto, nettoyage concessionnaire, désinfection ERP, entretien Saint-Étienne Loire, nettoyage salle de sport, STM propreté"
+        />
+        <meta name="author" content="V. Marconnet" />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href="https://stm-nettoyage.fr/services/professionnels"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Nettoyage professionnel – STM Saint-Étienne"
+        />
+        <meta
+          property="og:description"
+          content="STM intervient dans vos locaux pro : bureaux, cinémas, garages, commerces. Service fiable, réactif et discret à Saint-Étienne."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://stm-nettoyage.fr/services/professionnels"
+        />
+        <meta
+          property="og:image"
+          content="https://stm-nettoyage.fr/images/services/service-pro.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Nettoyage professionnel | STM Saint-Étienne"
+        />
+        <meta
+          name="twitter:description"
+          content="Nettoyage pro à Saint-Étienne : STM entretient vos locaux avec rigueur et adaptabilité. Showroom, salle de sport, vitres, désinfection."
+        />
+        <meta
+          name="twitter:image"
+          content="https://stm-nettoyage.fr/images/services/service-pro.png"
         />
       </Helmet>
-
       <motion.section
         className="services-page"
         initial={{ opacity: 0, y: 60 }}
@@ -71,12 +113,7 @@ const ServicesPro: React.FC = () => {
             </ul>
 
             <p>
-              Tous nos agents sont <strong>formés, équipés et discrets</strong>,
-              avec une{" "}
-              <strong>
-                intervention possible en dehors des heures d’ouverture
-              </strong>
-              .
+              Tous nos agents sont <strong>formés, équipés et discrets</strong>.
             </p>
 
             <div className="seo-section">

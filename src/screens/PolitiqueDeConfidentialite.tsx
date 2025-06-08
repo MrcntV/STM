@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Banner from "../components/Banner";
+import { Helmet } from "react-helmet";
 
 const PolitiqueDeConfidentialite: React.FC = () => {
   const fadeInVariants = {
@@ -14,6 +14,56 @@ const PolitiqueDeConfidentialite: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Politique de confidentialité – STM Nettoyage</title>
+        <meta
+          name="description"
+          content="Consultez la politique de confidentialité du site stm-nettoyage.fr. Aucune donnée personnelle n’est collectée, aucun cookie ni outil de suivi utilisé."
+        />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://stm-nettoyage.fr/politique-de-confidentialite"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Politique de confidentialité – STM Nettoyage"
+        />
+        <meta
+          property="og:description"
+          content="Aucune donnée personnelle n’est collectée via le site stm-nettoyage.fr. Pas de cookies ni d’analyses statistiques. Conformité RGPD."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://stm-nettoyage.fr/politique-de-confidentialite"
+        />
+        <meta
+          property="og:image"
+          content="https://stm-nettoyage.fr/images/og-image.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Politique de confidentialité – STM Nettoyage"
+        />
+        <meta
+          name="twitter:description"
+          content="RGPD, sécurité, droits des utilisateurs : retrouvez la politique de confidentialité du site STM Nettoyage."
+        />
+        <meta
+          name="twitter:image"
+          content="https://stm-nettoyage.fr/images/twitter-card.png"
+        />
+      </Helmet>
+
       <motion.div
         className="legal-header"
         initial="hidden"

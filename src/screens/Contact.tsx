@@ -7,16 +7,49 @@ import ContactForm from "../components/05_ContactForm";
 import { IoTime } from "react-icons/io5";
 
 const Contact: React.FC = () => {
-  const currentDate = new Date();
-
   return (
     <>
       <Helmet>
-        <title>STM - Contact</title>
-        <meta name="description" content={"helmet.contact.description"} />
+        <title>Contact – STM Nettoyage à Saint-Étienne</title>
+        <meta
+          name="description"
+          content="Contactez STM, entreprise de nettoyage à Saint-Étienne. Demandez un devis ou plus d’informations sur nos services pour particuliers et professionnels."
+        />
         <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="en" />
+        <meta httpEquiv="Content-Language" content="fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* SEO technique */}
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://stm-nettoyage.fr/contact" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Contact – STM Nettoyage à Saint-Étienne"
+        />
+        <meta
+          property="og:description"
+          content="Besoin d’un service de nettoyage professionnel ou particulier ? Contactez STM dès maintenant."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stm-nettoyage.fr/contact" />
+        <meta
+          property="og:image"
+          content="https://stm-nettoyage.fr/images/og-image.png"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact – STM Nettoyage" />
+        <meta
+          name="twitter:description"
+          content="Demandez un devis ou des renseignements à STM, spécialiste du nettoyage depuis 1996."
+        />
+        <meta
+          name="twitter:image"
+          content="https://stm-nettoyage.fr/images/og-image.png"
+        />
       </Helmet>
       <section className="DecalageHeader">
         <section className="contact-section">

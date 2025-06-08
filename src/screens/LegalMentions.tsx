@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const LegalMentions: React.FC = () => {
   const fadeInVariants = {
@@ -13,6 +14,49 @@ const LegalMentions: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Mentions légales – STM Nettoyage</title>
+        <meta
+          name="description"
+          content="Consultez les mentions légales du site stm-nettoyage.fr. Éditeur, hébergeur, propriété intellectuelle et politique de confidentialité de STM Nettoyage."
+        />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://stm-nettoyage.fr/mentions-legales"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Mentions légales – STM Nettoyage" />
+        <meta
+          property="og:description"
+          content="Mentions légales du site stm-nettoyage.fr : informations sur l'éditeur, l'hébergeur et la gestion des données."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://stm-nettoyage.fr/mentions-legales"
+        />
+        <meta
+          property="og:image"
+          content="https://stm-nettoyage.fr/images/og-image.png"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mentions légales – STM Nettoyage" />
+        <meta
+          name="twitter:description"
+          content="Informations légales et juridiques du site STM Nettoyage à Saint-Étienne."
+        />
+        <meta
+          name="twitter:image"
+          content="https://stm-nettoyage.fr/images/twitter-card.png"
+        />
+      </Helmet>
       <motion.div
         className="legal-header"
         initial="hidden"

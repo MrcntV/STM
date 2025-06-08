@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Vincent-Nicolas Marconnet
+Site: https://stm-nettoyage.fr
+Contact: contact@stm-nettoyage.fr
+From: Saint-Étienne, France
+
+/* SITE */
+Last update: 2025-06-08
+Made with: React + TypeScript, Framer Motion
+Hosted on: Hostinger
+
+/* THANKS */
+Thanks to our clients for their trust.
+Respect for clean code and clean spaces 🧼

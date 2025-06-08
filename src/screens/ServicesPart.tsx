@@ -7,15 +7,58 @@ const ServicesPart: React.FC = () => {
     <>
       <Helmet>
         <title>
-          Service de nettoyage pour particuliers à Saint-Étienne | STM
+          Nettoyage à domicile pour particuliers à Saint-Étienne – STM
         </title>
         <meta
           name="description"
-          content="STM propose des services de nettoyage pour particuliers à Saint-Étienne : ménage, vitres, débarras, entretien extérieur. Professionnalisme, efficacité et discrétion. Demandez votre devis gratuit."
+          content="Ménage, vitres, débarras et désinfection à domicile : STM propose un service professionnel pour les particuliers à Saint-Étienne et dans la Loire. Devis gratuit sous 24h."
         />
         <meta
           name="keywords"
-          content="nettoyage particulier Saint-Étienne, entreprise nettoyage maison, ménage professionnel Loire, entretien vitres, débarras cave grenier garage, jardinage, haute pression, entreprise nettoyage fiable, STM propreté"
+          content="nettoyage domicile Saint-Étienne, ménage particulier, nettoyage vitres maison, désinfection appartement, débarras garage cave, STM nettoyage Loire, nettoyage haute pression, devis ménage particulier"
+        />
+        <meta name="author" content="V. Marconnet" />
+        <meta name="robots" content="index, follow" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href="https://stm-nettoyage.fr/services/particuliers"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Service de nettoyage pour particuliers – STM à Saint-Étienne"
+        />
+        <meta
+          property="og:description"
+          content="Nettoyage régulier, vitres, débarras ou désinfection : STM intervient avec professionnalisme à votre domicile. Demandez un devis gratuit."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://stm-nettoyage.fr/services/particuliers"
+        />
+        <meta
+          property="og:image"
+          content="https://stm-nettoyage.fr/images/services/service-particulier.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Nettoyage à domicile – Particuliers | STM"
+        />
+        <meta
+          name="twitter:description"
+          content="Service de ménage et entretien pour particuliers à Saint-Étienne. Prestations sur-mesure avec matériel professionnel. Demande de devis rapide."
+        />
+        <meta
+          name="twitter:image"
+          content="https://stm-nettoyage.fr/images/services/service-particulier.png"
         />
       </Helmet>
 
@@ -65,10 +108,7 @@ const ServicesPart: React.FC = () => {
                 Nettoyage haute pression des extérieurs (terrasses, façades,
                 dalles)
               </li>
-              <li>
-                Jardinage et entretien des espaces verts (tonte, haies,
-                ramassage feuilles)
-              </li>
+
               <li>Débarras de caves, greniers, garages et dépendances</li>
               <li>
                 Accompagnement pour état des lieux de sortie ou de rentrée
@@ -76,8 +116,6 @@ const ServicesPart: React.FC = () => {
             </ul>
 
             <p>
-              Nos prestations peuvent être <strong>ponctuelles</strong> ou sous
-              forme de <strong>contrat régulier</strong>, selon vos préférences.
               Nous établissons un <strong>devis gratuit personnalisé</strong>{" "}
               sous 24h.
             </p>
@@ -105,9 +143,8 @@ const ServicesPart: React.FC = () => {
           <p>
             Nous utilisons du{" "}
             <strong>matériel de qualité professionnelle</strong> pour garantir
-            un nettoyage en profondeur, même dans les zones difficiles d’accès.
-            Nos véhicules STM (Opel Combo, Fiat Scudo) sont équipés pour
-            intervenir rapidement et efficacement.
+            un nettoyage en profondeur. Nos véhicules STM (Opel Combo, Fiat
+            Scudo) sont équipés pour intervenir rapidement et efficacement.
           </p>
           <p>
             Grâce à notre <strong>monobrosse</strong>, nos{" "}
