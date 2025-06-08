@@ -1,28 +1,25 @@
 {
-  "name": "STM Nettoyage",
-  "short_name": "STM",
-  "description": "Entreprise de nettoyage à Saint-Étienne : particuliers, professionnels, syndics.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#eaeaea",
-  "theme_color": "#a8c4e1",
-  "orientation": "portrait",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
-    },
-    {
-      "src": "/icons/icon-512-maskable.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
     }
-  ]
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
