@@ -119,6 +119,7 @@ html.modal-open {
   box-sizing: border-box;
   text-decoration: none;
   -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 .sr-only {

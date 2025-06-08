@@ -41,7 +41,10 @@ const Headers: React.FC = () => {
         </a>
       </div>
       <div className="containerlogo">
-        <button> Contactez-nous</button>
+        <a href="/contact">
+          {" "}
+          <button> Contactez-nous</button>
+        </a>
       </div>
     </header>
   );
