@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "STM-Server",
-      script: "serveur.js",
+      script: "./serveur/serveur.js",
       cwd: "/STM",
       watch: false,
       env: {
