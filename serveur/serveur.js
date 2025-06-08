@@ -20,15 +20,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// ✅ Fichiers statiques React
-app.use("/static", express.static(path.join(buildPath, "static")));
-app.use("/favicon.ico", express.static(path.join(buildPath, "favicon.ico")));
-app.use(
-  "/manifest.json",
-  express.static(path.join(buildPath, "manifest.json"))
-);
-app.use("/logo192.png", express.static(path.join(buildPath, "logo192.png")));
-
 // ✅ Fallback React Router SPA
 app.get("*", (req, res) => {
   res.sendFile(path.join(buildPath, "index.html"));
