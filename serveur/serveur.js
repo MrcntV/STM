@@ -1,31 +1,39 @@
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
+require("dotenv").config();
+const express = require("express");
+const path = require("path");
+const cors = require("cors");
 
 const app = express();
-const port = 4242;
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// ✅ Configuration
+const PORT = process.env.PORT_STANDARD || 4242;
+const buildPath = path.join(__dirname, "../build");
 
-// ✅ Chemin vers le dossier racine STM
-const rootDir = path.resolve(__dirname, "..");
-const buildPath = path.join(rootDir, "build");
+// ✅ Middleware
+app.use(cors());
+app.use(express.json());
 
-// ✅ Sert les assets statiques générés par React (JS, CSS, images...)
+// ✅ Logs simples
+app.use((req, res, next) => {
+  console.log(`📥 [${req.method}] ${req.url}`);
+  next();
+});
+
+// ✅ Sert les fichiers statiques (React)
 app.use("/static", express.static(path.join(buildPath, "static")));
+app.use("/favicon.ico", express.static(path.join(buildPath, "favicon.ico")));
 app.use(
   "/manifest.json",
   express.static(path.join(buildPath, "manifest.json"))
 );
 app.use("/logo192.png", express.static(path.join(buildPath, "logo192.png")));
-app.use("/favicon.ico", express.static(path.join(buildPath, "favicon.ico")));
 
-// ✅ Toutes les autres routes → index.html (React Router SPA)
+// ✅ Fallback vers index.html (React Router)
 app.get("*", (req, res) => {
   res.sendFile(path.join(buildPath, "index.html"));
 });
 
-app.listen(port, () => {
-  console.log(`✅ STM en ligne sur http://localhost:${port}`);
+// ✅ Démarrage serveur HTTP
+app.listen(PORT, () => {
+  console.log(`✅ STM lancé sur le port ${PORT}`);
 });
