@@ -3,6 +3,8 @@
 import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Banner: React.FC = () => {
   const location = useLocation();
@@ -89,7 +91,13 @@ const Banner: React.FC = () => {
             rel="noopener noreferrer"
             title={logo.alt}
           >
-            <img src={logo.src} alt={logo.alt} />
+            <LazyLoadImage
+              src={logo.src}
+              alt={logo.alt}
+              effect="blur"
+              width="100%"
+              height="auto"
+            />
           </a>
         ))}
       </div>
@@ -109,7 +117,13 @@ const Banner: React.FC = () => {
               rel="noopener noreferrer"
               title={logo.alt}
             >
-              <img src={logo.src} alt={logo.alt} />
+              <LazyLoadImage
+                src={logo.src}
+                alt={logo.alt}
+                effect="blur"
+                width="100%"
+                height="auto"
+              />
             </a>
           ))}
         </motion.div>
