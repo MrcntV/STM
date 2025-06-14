@@ -48,7 +48,7 @@ const Services: React.FC = () => {
           <p className="auto-services-description">
             STM entretient vos locaux depuis 29 ans. <br />
             Créée en 1996 et reprise en 2012 par Bernard POLLET, STM assure au
-            quotidien le nettoyage et l’entretien de plus de 40 000 m² de locaux
+            quotidien le nettoyage et l’entretien de plus de 8 500 m² de locaux
             professionnels et particuliers (bureaux, parties communes,
             commerces, etc.) sur l’agglomération de Saint-Étienne.
           </p>

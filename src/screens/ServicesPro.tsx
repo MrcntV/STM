@@ -126,7 +126,21 @@ const ServicesPro: React.FC = () => {
                 <li>Prestations écoresponsables sur demande</li>
               </ul>
             </div>
-
+            <div className="seo-section">
+              <h2>Pourquoi faire appel à STM ?</h2>
+              <p>
+                Dans un secteur d'activité où le <strong>turn-over</strong> est
+                fréquent, nous avons la particularité d'avoir des collaborateurs
+                fidèles, présents dans notre entreprise depuis de nombreuses
+                années. Nous nous efforçons de recruter des{" "}
+                <strong>agents de propreté</strong> qui aiment leur métier et
+                qui ont le <strong>sens du service</strong>. Ce{" "}
+                <strong>sérieux professionnel</strong> nous permet d’assurer des{" "}
+                <strong>prestations de nettoyage à domicile</strong> fiables,
+                régulières et de haute qualité à <strong>Saint-Étienne</strong>{" "}
+                et dans toute la <strong>Loire</strong>.
+              </p>
+            </div>
             <button className="service-button">Demander un devis</button>
           </div>
         </div>

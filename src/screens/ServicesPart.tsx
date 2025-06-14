@@ -121,17 +121,18 @@ const ServicesPart: React.FC = () => {
             </p>
             <div className="seo-section">
               <h2>Pourquoi faire appel à STM ?</h2>
-              <ul>
-                <li>Entreprise locale et réactive basée à Saint-Étienne</li>
-                <li>
-                  Plus de 20 ans d'expérience dans l'entretien et la propreté
-                </li>
-                <li>Tarifs transparents et devis détaillés</li>
-                <li>Personnel formé, déclaré et assuré</li>
-                <li>
-                  Respect de l'environnement avec produits écoresponsables
-                </li>
-              </ul>
+              <p>
+                Dans un secteur d'activité où le <strong>turn-over</strong> est
+                fréquent, nous avons la particularité d'avoir des collaborateurs
+                fidèles, présents dans notre entreprise depuis de nombreuses
+                années. Nous nous efforçons de recruter des{" "}
+                <strong>agents de propreté</strong> qui aiment leur métier et
+                qui ont le <strong>sens du service</strong>. Ce{" "}
+                <strong>sérieux professionnel</strong> nous permet d’assurer des{" "}
+                <strong>prestations de nettoyage à domicile</strong> fiables,
+                régulières et de haute qualité à <strong>Saint-Étienne</strong>{" "}
+                et dans toute la <strong>Loire</strong>.
+              </p>
             </div>
 
             <button className="service-button">Demander un devis</button>
