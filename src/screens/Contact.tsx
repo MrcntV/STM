@@ -93,10 +93,6 @@ const Contact: React.FC = () => {
               </a>
             </p>
           </motion.div>
-
-          <div className="signature">
-            <img src="/images/logo/signature-white.png" alt="" />
-          </div>
         </section>
         <div className="contact-form-container">
           <ContactForm />

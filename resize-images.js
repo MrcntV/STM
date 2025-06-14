@@ -3,8 +3,8 @@ import sharp from "sharp";
 import fs from "fs";
 import path from "path";
 
-const inputFolder = "./public/images/services";
-const outputFolder = "./public/images/services/images-optimized";
+const inputFolder = "./public/images/services"; // Mettre le chemiin d'entrée
+const outputFolder = "./public/images/services/images-optimized"; // Mettre le chemiin de sortie
 const widths = [400, 800, 1200];
 
 const processImage = async (filePath) => {
