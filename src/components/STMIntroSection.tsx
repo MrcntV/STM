@@ -53,7 +53,7 @@ const STMIntroSection: React.FC = () => {
             </h1>
 
             <p className="stm-intro-text">
-              STM entretient chaque jour plus de 40 000 m² de bureaux, commerces
+              STM entretient chaque jour plus de 8 500 m² de bureaux, commerces
               et logements sur Saint-Étienne et ses alentours.
             </p>
           </motion.div>
