@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -34,11 +35,15 @@ const Services: React.FC = () => {
     >
       <div className="auto-services-content">
         {/* Image avec animation */}
-        <motion.img
-          src="/images/locaux/local.png"
-          alt={"images local"}
-          className="auto-services-image"
-        />
+        <div className="auto-services-image">
+          <div className="lazy-wrapper">
+            <LazyLoadImage
+              src="/images//locaux/local.png"
+              alt="Véhicule STM"
+              effect="blur"
+            />
+          </div>
+        </div>
 
         {/* Texte avec animations */}
         <motion.div className="auto-services-text" variants={fadeUpVariants}>

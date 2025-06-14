@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
@@ -73,10 +75,17 @@ const ServicesPart: React.FC = () => {
 
         <div className="service-section">
           <div className="service-image">
-            <img
-              src="/images/services/service-particulier.png"
-              alt="Service nettoyage maison particulier à Saint-Étienne"
-            />
+            <div className="lazy-wrapper">
+              <LazyLoadImage
+                width={"100%"}
+                height={"100%"}
+                src="/images/services/images-optimized/service-particulier-800.webp"
+                srcSet="/images/services/images-optimized/service-particulier-400.webp 400w, /images/services/images-optimized/service-particulier-800.webp 800w, /images/services/images-optimized/service-particulier-1200.webp 1200w"
+                sizes="(max-width: 600px) 100vw, 50vw"
+                alt="Service nettoyage maison particulier à Saint-Étienne"
+                effect="blur"
+              />
+            </div>
           </div>
 
           <div className="service-content">
@@ -122,16 +131,20 @@ const ServicesPart: React.FC = () => {
             <div className="seo-section">
               <h2>Pourquoi faire appel à STM ?</h2>
               <p>
-                Dans un secteur d'activité où le <strong>turn-over</strong> est
-                fréquent, nous avons la particularité d'avoir des collaborateurs
-                fidèles, présents dans notre entreprise depuis de nombreuses
-                années. Nous nous efforçons de recruter des{" "}
-                <strong>agents de propreté</strong> qui aiment leur métier et
-                qui ont le <strong>sens du service</strong>. Ce{" "}
+                Dans un secteur où le <strong>turn-over est élevé</strong>,
+                notre entreprise se distingue par la stabilité de ses équipes.
+                Nos <strong>collaborateurs expérimentés</strong> sont présents
+                depuis de nombreuses années.
+                <br />
+                <br />
+                Nous recrutons avec exigence des{" "}
+                <strong>agents de propreté</strong> passionnés par leur métier
+                et engagés dans la <strong>qualité du service</strong>. Ce{" "}
                 <strong>sérieux professionnel</strong> nous permet d’assurer des{" "}
                 <strong>prestations de nettoyage à domicile</strong> fiables,
-                régulières et de haute qualité à <strong>Saint-Étienne</strong>{" "}
-                et dans toute la <strong>Loire</strong>.
+                régulières et hautement qualitatives à{" "}
+                <strong>Saint-Étienne</strong> et dans toute la{" "}
+                <strong>Loire</strong>.
               </p>
             </div>
 
@@ -158,7 +171,17 @@ const ServicesPart: React.FC = () => {
             Le Chambon-Feugerolles, Firminy, Saint-Genest-Lerpt,
             Roche-la-Molière, etc.
           </p>
-          <img src="/images/locaux/VoitureSTM.png" alt="" />
+          <div className="lazy-wrapper">
+            <LazyLoadImage
+              width={"100%"}
+              height={"100%"}
+              src="/images/locaux/images-optimized/VoitureSTM-800.webp"
+              srcSet="/images/locaux/images-optimized/VoitureSTM-400.webp 400w, /images/locaux/images-optimized/VoitureSTM-800.webp 800w, /images/locaux/images-optimized/VoitureSTM-1200.webp 1200w"
+              sizes="(max-width: 600px) 100vw, 50vw"
+              alt="Véhicule STM nettoyage"
+              effect="blur"
+            />
+          </div>
         </div>
       </motion.section>
     </>
