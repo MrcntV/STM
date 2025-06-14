@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
@@ -70,10 +72,17 @@ const ServicesPro: React.FC = () => {
 
         <div className="service-section">
           <div className="service-image">
-            <img
-              src="/images/services/service-pro.png"
-              alt="Nettoyage professionnel Saint-Étienne"
-            />
+            <div className="lazy-wrapper">
+              <LazyLoadImage
+                width={"100%"}
+                height={"100%"}
+                src="/images/services/images-optimized/service-pro-800.webp"
+                srcSet="/images/services/images-optimized/service-pro-400.webp 400w, /images/services/images-optimized/service-pro-800.webp 800w, /images/services/images-optimized/service-pro-1200.webp 1200w"
+                sizes="(max-width: 600px) 100vw, 50vw"
+                alt="Nettoyage professionnel Saint-Étienne"
+                effect="blur"
+              />
+            </div>
           </div>
 
           <div className="service-content">
@@ -160,7 +169,17 @@ const ServicesPro: React.FC = () => {
             Nous intervenons à Saint-Étienne, La Talaudière,
             Andrézieux-Bouthéon, Firminy, Saint-Chamond, et dans toute la Loire.
           </p>
-          <img src="/images/locaux/VoitureSTM.png" alt="" />
+          <div className="lazy-wrapper">
+            <LazyLoadImage
+              width={"100%"}
+              height={"100%"}
+              src="/images/locaux/images-optimized/VoitureSTM-800.webp"
+              srcSet="/images/locaux/images-optimized/VoitureSTM-400.webp 400w, /images/locaux/images-optimized/VoitureSTM-800.webp 800w, /images/locaux/images-optimized/VoitureSTM-1200.webp 1200w"
+              sizes="(max-width: 600px) 100vw, 50vw"
+              alt="Véhicule STM"
+              effect="blur"
+            />
+          </div>
         </div>
       </motion.section>
     </>

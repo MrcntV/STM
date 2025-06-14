@@ -360,6 +360,15 @@ iframe {
   width: auto;
   height: auto;
 }
+.lazy-wrapper {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.lazy-wrapper img {
+  width: 100%;
+  opacity: 0.95;
+}
 
 @media (max-width: 768px) {
   section {

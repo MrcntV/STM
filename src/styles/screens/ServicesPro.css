@@ -82,6 +82,9 @@
   justify-content: center;
 }
 
+.materials-section span {
+  text-align: center;
+}
 .materials-section h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
