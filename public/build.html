@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STM - Mise à jour en cours</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #2e7dd1;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.5;
+      }
+
+      .loader {
+        margin: 2rem auto;
+        width: 50px;
+        height: 50px;
+        border: 6px solid #ddd;
+        border-top-color: #2e7dd1;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Le site est en cours de mise à jour</h1>
+    <div class="loader"></div>
+    <p>
+      Merci de votre patience. Notre site STM est actuellement en train d’être
+      mis à jour pour vous offrir une meilleure expérience. Revenez dans
+      quelques instants !
+    </p>
+  </body>
+</html>
