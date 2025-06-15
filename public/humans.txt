@@ -5,7 +5,7 @@ Contact: contact@stm-nettoyage.fr
 From: Saint-Étienne, France
 
 /* SITE */
-Last update: 2025-06-14
+Last update: 2025-06-15
 Made with: React + TypeScript, Framer Motion
 Hosted on: Hostinger
 
