@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Loader from "./components/Loader";
 
 // Importation des fichiers CSS
@@ -39,6 +40,12 @@ import { NotificationProvider } from "./components/Notifications/NotificationCon
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const scrollRef = useSmoothScroll(); // Utilisation du hook
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   useEffect(() => {
     // Simule un chargement initial de 2 secondes
