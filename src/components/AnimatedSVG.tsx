@@ -28,7 +28,6 @@ export default function AnimatedSTM() {
         initial="hidden"
         animate="visible"
         width="100%"
-        height="auto"
         style={{ maxWidth: "100vw" }}
       >
         <g id="Calque_1-2" data-name="Calque 1">
