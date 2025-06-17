@@ -15,7 +15,12 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'"],
+        defaultSrc: [
+          "'self'",
+          "https://www.google.com",
+          "https://www.gstatic.com",
+          "https://recaptcha.net",
+        ],
         scriptSrc: [
           "'self'",
           "https://www.google.com",
