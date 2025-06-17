@@ -9,7 +9,7 @@ const ServicesPart: React.FC = () => {
   const navigate = useNavigate();
   const handleDevisClick = () => {
     navigate(
-      "/contact?message=Bonjour, je souhaite obtenir un devis pour un service de nettoyage à domicile (STM - particulier).#contact-form"
+      "/contact?type=particulier&message=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20le%20nettoyage%20à%20domicile.#contact-form"
     );
   };
   return (

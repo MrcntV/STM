@@ -154,7 +154,7 @@ const ServicesSyndic: React.FC = () => {
               className="service-button"
               onClick={() => {
                 navigate(
-                  "/contact?message=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20l’entretien%20de%20notre%20copropriété.%20Merci%20de%20me%20recontacter."
+                  "/contact?type=syndic&message=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20l’entretien%20de%20notre%20copropriété.#contact-form"
                 );
               }}
             >
