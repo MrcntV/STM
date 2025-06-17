@@ -26,6 +26,7 @@ app.use(
           "https://www.google.com",
           "https://www.gstatic.com",
           "https://recaptcha.net",
+          "https://api.emailjs.com",
         ],
         frameSrc: [
           "'self'",
@@ -39,6 +40,7 @@ app.use(
           "'self'",
           "https://www.google.com",
           "https://www.gstatic.com",
+          "https://api.emailjs.com",
         ],
       },
     },
