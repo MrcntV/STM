@@ -84,7 +84,10 @@ const Contact: React.FC = () => {
             </p>
             <p>
               <FaPhone />
-              Tel.: {process.env.REACT_APP_PHONE}
+              Tel.:{" "}
+              <a href={`tel:${process.env.REACT_APP_PHONE}`}>
+                {process.env.REACT_APP_PHONE}
+              </a>
             </p>
             <p>
               <FaEnvelope />{" "}
