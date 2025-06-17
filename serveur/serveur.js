@@ -11,39 +11,39 @@ import { fileURLToPath } from "url"; // Permet d'obtenir __filename dans un modu
 const app = express();
 
 // Applique les headers de sécurité via Helmet
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: [
-          "'self'",
-          "https://www.google.com",
-          "https://www.gstatic.com",
-          "https://recaptcha.net",
-        ],
-        scriptSrc: [
-          "'self'",
-          "https://www.google.com",
-          "https://www.gstatic.com",
-          "https://recaptcha.net",
-        ],
-        frameSrc: [
-          "'self'",
-          "https://www.google.com",
-          "https://www.gstatic.com",
-          "https://recaptcha.net",
-        ],
-        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-        imgSrc: ["'self'", "data:", "https://www.gstatic.com"],
-        connectSrc: [
-          "'self'",
-          "https://www.google.com",
-          "https://www.gstatic.com",
-        ],
-      },
-    },
-  })
-);
+// app.use(
+//   helmet({
+//    contentSecurityPolicy: {
+//      directives: {
+//       defaultSrc: [
+//         "'self'",
+//         "https://www.google.com",
+//      "https://www.gstatic.com",
+//          "https://recaptcha.net",
+//   ],
+//   scriptSrc: [
+//   "'self'",
+//  "https://www.google.com",
+//  "https://www.gstatic.com",
+//   "https://recaptcha.net",
+//  ],
+//  frameSrc: [
+//  "'self'",
+//  "https://www.google.com",
+// "https://www.gstatic.com",
+// "https://recaptcha.net",
+//  ],
+//  styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+//  imgSrc: ["'self'", "data:", "https://www.gstatic.com"],
+//  connectSrc: [
+//  "'self'",
+//  "https://www.google.com",
+//        "https://www.gstatic.com",
+//   ],
+//       },
+//     },
+//   })
+// );
 
 // Active la compression gzip des réponses
 app.use(compression());
