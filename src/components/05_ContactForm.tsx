@@ -16,12 +16,22 @@ const ContactForm: React.FC = () => {
     { id: number; type: "success" | "error" | "info"; message: string }[]
   >([]);
   const [prefilledMessage, setPrefilledMessage] = useState("");
+  const [userType, setUserType] = useState("");
 
   // Récupération du message pré-rempli si présent dans l'URL
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const message = queryParams.get("message") || "";
+    const type = queryParams.get("type") || "";
+
     setPrefilledMessage(message);
+    if (
+      type === "particulier" ||
+      type === "professionnel" ||
+      type === "syndic"
+    ) {
+      setUserType(type);
+    }
   }, [location.search]);
 
   // Suppression d'une notification
@@ -134,7 +144,12 @@ const ContactForm: React.FC = () => {
         </label>
         <label>
           Vous êtes
-          <select name="user_type" required>
+          <select
+            name="user_type"
+            value={userType}
+            onChange={(e) => setUserType(e.target.value)}
+            required
+          >
             <option value="">-- Sélectionnez votre statut --</option>
             <option value="particulier">Particulier</option>
             <option value="professionnel">Professionnel</option>
@@ -172,13 +187,13 @@ const ContactForm: React.FC = () => {
         </label>
 
         {/* Google reCAPTCHA */}
-        <div className="captcha-container">
-          <ReCAPTCHA
-            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || ""}
-            onChange={(token) => setCaptchaToken(token)}
-            onExpired={() => setCaptchaToken(null)}
-          />
-        </div>
+
+        <ReCAPTCHA
+          sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || ""}
+          onChange={(token) => setCaptchaToken(token)}
+          onExpired={() => setCaptchaToken(null)}
+        />
+
         <p className="rgpd-note">
           En envoyant ce formulaire, vous acceptez que vos données soient
           utilisées exclusivement pour vous répondre. Aucune information n’est

@@ -156,7 +156,7 @@ const ServicesPro: React.FC = () => {
               className="service-button"
               onClick={() => {
                 navigate(
-                  "/contact?message=Bonjour, je souhaite un devis pour une prestation de nettoyage professionnel.%20Merci de me recontacter.%20–%20Page%20services%20pro#contact-form"
+                  "/contact?type=professionnel&message=Bonjour, je souhaite un devis pour une prestation de nettoyage professionnel.#contact-form"
                 );
               }}
             >
