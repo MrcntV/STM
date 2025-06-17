@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -89,6 +88,7 @@ const Services: React.FC = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
+            onClick={() => setShowPopup(false)}
             style={{
               position: "fixed",
               top: 0,
@@ -106,6 +106,7 @@ const Services: React.FC = () => {
             <motion.div
               className="popup"
               variants={popupVariants}
+              onClick={(e) => e.stopPropagation()}
               style={{
                 background: "white",
                 padding: "2rem",

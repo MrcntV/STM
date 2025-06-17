@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 const ServicesPart: React.FC = () => {
+  const navigate = useNavigate();
+  const handleDevisClick = () => {
+    navigate(
+      "/contact?message=Bonjour, je souhaite obtenir un devis pour un service de nettoyage à domicile (STM - particulier).#contact-form"
+    );
+  };
   return (
     <>
       <Helmet>
@@ -148,7 +155,9 @@ const ServicesPart: React.FC = () => {
               </p>
             </div>
 
-            <button className="service-button">Demander un devis</button>
+            <button className="service-button" onClick={handleDevisClick}>
+              Demander un devis
+            </button>
           </div>
         </div>
 
