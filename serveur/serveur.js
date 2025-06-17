@@ -11,7 +11,23 @@ import { fileURLToPath } from "url"; // Permet d'obtenir __filename dans un modu
 const app = express();
 
 // Applique les headers de sécurité via Helmet
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [
+          "'self'",
+          "https://www.google.com",
+          "https://www.gstatic.com",
+        ],
+        frameSrc: ["'self'", "https://www.google.com"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        imgSrc: ["'self'", "data:", "https://www.gstatic.com"],
+      },
+    },
+  })
+);
 
 // Active la compression gzip des réponses
 app.use(compression());
