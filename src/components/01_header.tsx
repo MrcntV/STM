@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import MenuBurger from "./03_MenuBurger";
 
 const Headers: React.FC = () => {
@@ -36,15 +37,14 @@ const Headers: React.FC = () => {
 
       {/* Logo principal avec lien vers la page d'accueil */}
       <div className="containerlogo">
-        <a className="LinkHome" href="/">
+        <Link className="LinkHome" to="/">
           <img src="/images/logo/LogoSTM.png" alt="logo race motors group" />
-        </a>
+        </Link>
       </div>
       <div className="containerlogo">
-        <a href="/contact">
-          {" "}
-          <button> Contactez-nous</button>
-        </a>
+        <Link to="/contact">
+          <button>Contactez-nous</button>
+        </Link>
       </div>
     </header>
   );
