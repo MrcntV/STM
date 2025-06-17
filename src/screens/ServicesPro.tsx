@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 const ServicesPro: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -150,7 +152,16 @@ const ServicesPro: React.FC = () => {
                 et dans toute la <strong>Loire</strong>.
               </p>
             </div>
-            <button className="service-button">Demander un devis</button>
+            <button
+              className="service-button"
+              onClick={() => {
+                navigate(
+                  "/contact?message=Bonjour, je souhaite un devis pour une prestation de nettoyage professionnel.%20Merci de me recontacter.%20–%20Page%20services%20pro#contact-form"
+                );
+              }}
+            >
+              Demander un devis
+            </button>
           </div>
         </div>
 

@@ -133,11 +133,20 @@ const ContactForm: React.FC = () => {
           />
         </label>
         <label>
-          Région
+          Vous êtes
+          <select name="user_type" required>
+            <option value="">-- Sélectionnez votre statut --</option>
+            <option value="particulier">Particulier</option>
+            <option value="professionnel">Professionnel</option>
+            <option value="syndic">Syndic</option>
+          </select>
+        </label>
+        <label>
+          Lieu
           <input
             type="text"
-            name="region"
-            placeholder="Votre région"
+            name="location"
+            placeholder="Votre lieu"
             required
           />
         </label>

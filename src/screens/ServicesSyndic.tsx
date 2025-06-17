@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 const ServicesSyndic: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -148,7 +150,16 @@ const ServicesSyndic: React.FC = () => {
               </p>
             </div>
 
-            <button className="service-button">Demander un devis</button>
+            <button
+              className="service-button"
+              onClick={() => {
+                navigate(
+                  "/contact?message=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20l’entretien%20de%20notre%20copropriété.%20Merci%20de%20me%20recontacter."
+                );
+              }}
+            >
+              Demander un devis
+            </button>
           </div>
         </div>
 

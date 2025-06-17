@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
             </p>
           </motion.div>
         </section>
-        <div className="contact-form-container">
+        <div className="contact-form-container" id="contact-form">
           <ContactForm />
         </div>
       </section>
