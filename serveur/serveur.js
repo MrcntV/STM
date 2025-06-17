@@ -44,14 +44,17 @@ app.use(
 // Route spéciale pour tester si le serveur est en ligne (utile pour les outils de monitoring)
 app.get("/health", (_, res) => res.sendStatus(200));
 
-// Affiche une page spéciale si le site est en cours de build
-const buildStatusPath = path.join(buildPath, "build.html");
+// Middleware pour afficher build.html si index.html est temporairement indisponible
 app.use((req, res, next) => {
-  if (fs.existsSync(buildStatusPath)) {
-    res.sendFile(buildStatusPath);
-  } else {
-    next();
+  const indexPath = path.join(buildPath, "index.html");
+  const buildStatusPath = path.join(buildPath, "build.html");
+
+  if (!fs.existsSync(indexPath) && fs.existsSync(buildStatusPath)) {
+    console.log("⚠️ index.html manquant. Affichage de la page de build.");
+    return res.sendFile(buildStatusPath);
   }
+
+  next();
 });
 
 // Catch-all : redirige toutes les autres routes vers index.html (SPA)
