@@ -20,10 +20,21 @@ app.use(
           "'self'",
           "https://www.google.com",
           "https://www.gstatic.com",
+          "https://recaptcha.net",
         ],
-        frameSrc: ["'self'", "https://www.google.com"],
-        styleSrc: ["'self'", "'unsafe-inline'"],
+        frameSrc: [
+          "'self'",
+          "https://www.google.com",
+          "https://www.gstatic.com",
+          "https://recaptcha.net",
+        ],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
         imgSrc: ["'self'", "data:", "https://www.gstatic.com"],
+        connectSrc: [
+          "'self'",
+          "https://www.google.com",
+          "https://www.gstatic.com",
+        ],
       },
     },
   })
