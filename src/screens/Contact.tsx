@@ -10,20 +10,33 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
+        {/* Informations de base */}
+        <html lang="fr" />
         <title>Contact – STM Nettoyage à Saint-Étienne</title>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+
+        {/* SEO */}
         <meta
           name="description"
           content="Contactez STM, entreprise de nettoyage à Saint-Étienne. Demandez un devis ou plus d’informations sur nos services pour particuliers et professionnels."
         />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="fr" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SEO technique */}
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://stm-nettoyage.fr/contact" />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/images/og-image.png"
+        />
 
-        {/* Open Graph */}
+        {/* Open Graph (Facebook / LinkedIn...) */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Contact – STM Nettoyage à Saint-Étienne"
@@ -32,8 +45,8 @@ const Contact: React.FC = () => {
           property="og:description"
           content="Besoin d’un service de nettoyage professionnel ou particulier ? Contactez STM dès maintenant."
         />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stm-nettoyage.fr/contact" />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
           content="https://stm-nettoyage.fr/images/og-image.png"
@@ -50,6 +63,28 @@ const Contact: React.FC = () => {
           name="twitter:image"
           content="https://stm-nettoyage.fr/images/og-image.png"
         />
+
+        {/* Données structurées JSON-LD */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact – STM Nettoyage",
+      "url": "https://stm-nettoyage.fr/contact",
+      "description": "Page de contact de STM, entreprise de nettoyage à Saint-Étienne",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "STM Nettoyage",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+        }
+      }
+    }
+    `}
+        </script>
       </Helmet>
       <section className="DecalageHeader">
         <section className="contact-section">

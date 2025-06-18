@@ -15,34 +15,46 @@ const LegalMentions: React.FC = () => {
   return (
     <>
       <Helmet>
+        {/* Langue + base */}
+        <html lang="fr" />
         <title>Mentions légales – STM Nettoyage</title>
-        <meta
-          name="description"
-          content="Consultez les mentions légales du site stm-nettoyage.fr. Éditeur, hébergeur, propriété intellectuelle et politique de confidentialité de STM Nettoyage."
-        />
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Language" content="fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+
+        {/* SEO */}
+        <meta
+          name="description"
+          content="Consultez les mentions légales du site stm-nettoyage.fr. Éditeur, hébergeur, propriété intellectuelle et politique de confidentialité de STM Nettoyage."
+        />
         <link
           rel="canonical"
           href="https://stm-nettoyage.fr/mentions-legales"
         />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
+        />
 
         {/* Open Graph */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Mentions légales – STM Nettoyage" />
         <meta
           property="og:description"
           content="Mentions légales du site stm-nettoyage.fr : informations sur l'éditeur, l'hébergeur et la gestion des données."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://stm-nettoyage.fr/mentions-legales"
         />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
-          content="https://stm-nettoyage.fr/images/og-image.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
 
         {/* Twitter Card */}
@@ -54,8 +66,30 @@ const LegalMentions: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://stm-nettoyage.fr/images/twitter-card.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
+
+        {/* JSON-LD Schema.org */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Mentions légales – STM Nettoyage",
+      "url": "https://stm-nettoyage.fr/mentions-legales",
+      "description": "Mentions légales du site stm-nettoyage.fr : informations sur l'éditeur, l'hébergeur et la gestion des données.",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "STM Nettoyage",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+        }
+      }
+    }
+    `}
+        </script>
       </Helmet>
       <motion.div
         className="legal-header"

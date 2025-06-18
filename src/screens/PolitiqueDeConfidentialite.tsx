@@ -15,21 +15,30 @@ const PolitiqueDeConfidentialite: React.FC = () => {
   return (
     <>
       <Helmet>
+        <html lang="fr" />
         <title>Politique de confidentialité – STM Nettoyage</title>
-        <meta
-          name="description"
-          content="Consultez la politique de confidentialité du site stm-nettoyage.fr. Aucune donnée personnelle n’est collectée, aucun cookie ni outil de suivi utilisé."
-        />
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Language" content="fr" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
+        />
+        <meta
+          name="description"
+          content="Consultez la politique de confidentialité du site stm-nettoyage.fr. Aucune donnée personnelle n’est collectée, aucun cookie ni outil de suivi utilisé."
+        />
         <link
           rel="canonical"
           href="https://stm-nettoyage.fr/politique-de-confidentialite"
         />
 
         {/* Open Graph */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Politique de confidentialité – STM Nettoyage"
@@ -38,14 +47,14 @@ const PolitiqueDeConfidentialite: React.FC = () => {
           property="og:description"
           content="Aucune donnée personnelle n’est collectée via le site stm-nettoyage.fr. Pas de cookies ni d’analyses statistiques. Conformité RGPD."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://stm-nettoyage.fr/politique-de-confidentialite"
         />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
-          content="https://stm-nettoyage.fr/images/og-image.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
 
         {/* Twitter */}
@@ -60,10 +69,31 @@ const PolitiqueDeConfidentialite: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://stm-nettoyage.fr/images/twitter-card.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
-      </Helmet>
 
+        {/* Schema.org */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Politique de confidentialité – STM Nettoyage",
+        "url": "https://stm-nettoyage.fr/politique-de-confidentialite",
+        "description": "Aucune donnée personnelle n’est collectée via le site stm-nettoyage.fr. Pas de cookies ni d’analyses statistiques. Conformité RGPD.",
+        "inLanguage": "fr-FR",
+        "publisher": {
+          "@type": "Organization",
+          "name": "STM Nettoyage",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+          }
+        }
+      }
+    `}
+        </script>
+      </Helmet>
       <motion.div
         className="legal-header"
         initial="hidden"

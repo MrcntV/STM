@@ -70,7 +70,7 @@ button span {
   position: relative;
 }
 
-/* 📱 Adaptation du bouton pour les mobiles */
+/*  Adaptation du bouton pour les mobiles */
 @media screen and (max-width: 768px) {
   button {
     min-width: 150px;
