@@ -10,7 +10,18 @@ const ServicesPro: React.FC = () => {
   return (
     <>
       <Helmet>
+        <html lang="fr" />
         <title>Nettoyage professionnel à Saint-Étienne – STM</title>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
+        />
         <meta
           name="description"
           content="Nettoyage de salles de sport, commerces, garages, bureaux et ERP : STM propose un service professionnel, sur mesure et réactif à Saint-Étienne et dans la Loire."
@@ -19,17 +30,14 @@ const ServicesPro: React.FC = () => {
           name="keywords"
           content="nettoyage professionnel Saint-Étienne, entreprise nettoyage ERP, propreté bureaux commerces, entretien garage auto, nettoyage concessionnaire, désinfection ERP, entretien Saint-Étienne Loire, nettoyage salle de sport, STM propreté"
         />
-        <meta name="author" content="V. Marconnet" />
-        <meta name="robots" content="index, follow" />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="fr" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="canonical"
           href="https://stm-nettoyage.fr/services/professionnels"
         />
 
         {/* Open Graph */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Nettoyage professionnel – STM Saint-Étienne"
@@ -38,14 +46,14 @@ const ServicesPro: React.FC = () => {
           property="og:description"
           content="STM intervient dans vos locaux pro : bureaux, cinémas, garages, commerces. Service fiable, réactif et discret à Saint-Étienne."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://stm-nettoyage.fr/services/professionnels"
         />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
-          content="https://stm-nettoyage.fr/images/services/service-pro.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
 
         {/* Twitter */}
@@ -60,8 +68,37 @@ const ServicesPro: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://stm-nettoyage.fr/images/services/service-pro.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
+
+        {/* Schema.org */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Nettoyage professionnel",
+        "provider": {
+          "@type": "Organization",
+          "name": "STM Nettoyage",
+          "url": "https://stm-nettoyage.fr",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+          }
+        },
+        "areaServed": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Saint-Étienne",
+            "addressCountry": "FR"
+          }
+        },
+        "description": "Nettoyage de bureaux, garages, commerces et ERP : STM propose un service professionnel, sur mesure et réactif à Saint-Étienne et dans la Loire."
+      }
+    `}
+        </script>
       </Helmet>
       <motion.section
         className="services-page"

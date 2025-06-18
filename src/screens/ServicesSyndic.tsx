@@ -10,7 +10,18 @@ const ServicesSyndic: React.FC = () => {
   return (
     <>
       <Helmet>
+        <html lang="fr" />
         <title>Nettoyage de copropriétés à Saint-Étienne – STM</title>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
+        />
         <meta
           name="description"
           content="STM est spécialisé dans le nettoyage de copropriétés à Saint-Étienne : entretien des parties communes, relampage, gestion des containers, débarras et services ponctuels."
@@ -19,17 +30,14 @@ const ServicesSyndic: React.FC = () => {
           name="keywords"
           content="nettoyage copropriété Saint-Étienne, entreprise entretien immeuble Loire, syndic Saint-Étienne propreté, nettoyage parties communes, relampage résidence, débarras cave copropriété, nettoyage cage escalier, STM copropriétés"
         />
-        <meta name="author" content="V. Marconnet" />
-        <meta name="robots" content="index, follow" />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="fr" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="canonical"
           href="https://stm-nettoyage.fr/services/syndics"
         />
 
         {/* Open Graph */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Nettoyage de copropriétés – STM Saint-Étienne"
@@ -38,14 +46,14 @@ const ServicesSyndic: React.FC = () => {
           property="og:description"
           content="Prestations professionnelles pour syndics : entretien régulier, nettoyage des parties communes, débarras, relampage. Intervention à Saint-Étienne et alentours."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://stm-nettoyage.fr/services/syndics"
         />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
-          content="https://stm-nettoyage.fr/images/services/service-copro.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
 
         {/* Twitter */}
@@ -60,8 +68,37 @@ const ServicesSyndic: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://stm-nettoyage.fr/images/services/service-copro.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
+
+        {/* Schema.org */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Nettoyage de copropriétés",
+        "provider": {
+          "@type": "Organization",
+          "name": "STM Nettoyage",
+          "url": "https://stm-nettoyage.fr",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+          }
+        },
+        "areaServed": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Saint-Étienne",
+            "addressCountry": "FR"
+          }
+        },
+        "description": "Nettoyage professionnel pour les copropriétés à Saint-Étienne : entretien des parties communes, relampage, débarras, gestion des containers et interventions ponctuelles."
+      }
+    `}
+        </script>
       </Helmet>
       <motion.section
         className="services-page"

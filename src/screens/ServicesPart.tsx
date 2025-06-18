@@ -15,9 +15,20 @@ const ServicesPart: React.FC = () => {
   return (
     <>
       <Helmet>
+        <html lang="fr" />
         <title>
           Nettoyage à domicile pour particuliers à Saint-Étienne – STM
         </title>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="STM Nettoyage" />
+        <meta name="copyright" content="STM Nettoyage" />
+        <meta
+          name="image"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
+        />
         <meta
           name="description"
           content="Ménage, vitres, débarras et désinfection à domicile : STM propose un service professionnel pour les particuliers à Saint-Étienne et dans la Loire. Devis gratuit sous 24h."
@@ -26,17 +37,14 @@ const ServicesPart: React.FC = () => {
           name="keywords"
           content="nettoyage domicile Saint-Étienne, ménage particulier, nettoyage vitres maison, désinfection appartement, débarras garage cave, STM nettoyage Loire, nettoyage haute pression, devis ménage particulier"
         />
-        <meta name="author" content="V. Marconnet" />
-        <meta name="robots" content="index, follow" />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="fr" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="canonical"
           href="https://stm-nettoyage.fr/services/particuliers"
         />
 
         {/* Open Graph */}
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Service de nettoyage pour particuliers – STM à Saint-Étienne"
@@ -45,17 +53,17 @@ const ServicesPart: React.FC = () => {
           property="og:description"
           content="Nettoyage régulier, vitres, débarras ou désinfection : STM intervient avec professionnalisme à votre domicile. Demandez un devis gratuit."
         />
-        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://stm-nettoyage.fr/services/particuliers"
         />
+        <meta property="og:site_name" content="STM Nettoyage" />
         <meta
           property="og:image"
-          content="https://stm-nettoyage.fr/images/services/service-particulier.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
 
-        {/* Twitter */}
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -67,8 +75,37 @@ const ServicesPart: React.FC = () => {
         />
         <meta
           name="twitter:image"
-          content="https://stm-nettoyage.fr/images/services/service-particulier.png"
+          content="https://stm-nettoyage.fr/stm-logo-512px.png"
         />
+
+        {/* JSON-LD Schema.org */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Nettoyage à domicile pour particuliers",
+        "provider": {
+          "@type": "Organization",
+          "name": "STM Nettoyage",
+          "url": "https://stm-nettoyage.fr",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://stm-nettoyage.fr/stm-logo-512px.png"
+          }
+        },
+        "areaServed": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Saint-Étienne",
+            "addressCountry": "FR"
+          }
+        },
+        "description": "Ménage, vitres, débarras et désinfection à domicile : STM propose un service professionnel pour les particuliers à Saint-Étienne et dans la Loire."
+      }
+    `}
+        </script>
       </Helmet>
 
       <motion.section
