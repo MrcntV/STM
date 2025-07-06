@@ -115,7 +115,7 @@ const ServicesPart: React.FC = () => {
         exit={{ opacity: 0, y: 60 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1> Particuliers</h1>
+        <h1>Particuliers</h1>
 
         <div className="service-section">
           <div className="service-image">
@@ -143,6 +143,13 @@ const ServicesPart: React.FC = () => {
               d’un <strong>grand nettoyage de printemps</strong>, ou d’une
               intervention après un événement (travaux, déménagement, sinistre,
               etc.).
+              <br />
+              Nous proposons également le{" "}
+              <strong>nettoyage après déménagement</strong>, l'
+              <strong>
+                entretien de maison ou d'appartement avant location
+              </strong>{" "}
+              ou encore la <strong>remise en état après sinistre</strong>.
             </p>
             <p>
               Nous intervenons avec <strong>discrétion</strong>,{" "}
@@ -174,22 +181,19 @@ const ServicesPart: React.FC = () => {
               sous 24h.
             </p>
             <div className="seo-section">
-              <h2>Pourquoi faire appel à STM ?</h2>
+              <h2>
+                Pourquoi faire appel à STM pour l'entretien de votre domicile ?
+              </h2>
               <p>
                 Dans un secteur où le <strong>turn-over est élevé</strong>,
-                notre entreprise se distingue par la stabilité de ses équipes.
-                Nos <strong>collaborateurs expérimentés</strong> sont présents
-                depuis de nombreuses années.
-                <br />
-                <br />
-                Nous recrutons avec exigence des{" "}
-                <strong>agents de propreté</strong> passionnés par leur métier
-                et engagés dans la <strong>qualité du service</strong>. Ce{" "}
-                <strong>sérieux professionnel</strong> nous permet d’assurer des{" "}
+                notre entreprise se distingue par la stabilité et l'expérience
+                de ses équipes. Nos <strong>agents de propreté</strong> sont
+                rigoureusement sélectionnés et passionnés par leur métier. Nous
+                garantissons ainsi des
                 <strong>prestations de nettoyage à domicile</strong> fiables,
-                régulières et hautement qualitatives à{" "}
-                <strong>Saint-Étienne</strong> et dans toute la{" "}
-                <strong>Loire</strong>.
+                discrètes et de haute qualité, à <strong>Saint-Étienne</strong>,
+                dans la
+                <strong>Loire</strong> et les communes environnantes.
               </p>
             </div>
 
@@ -230,7 +234,7 @@ const ServicesPart: React.FC = () => {
               src="/images/locaux/images-optimized/VoitureSTM-800.webp"
               srcSet="/images/locaux/images-optimized/VoitureSTM-400.webp 400w, /images/locaux/images-optimized/VoitureSTM-800.webp 800w, /images/locaux/images-optimized/VoitureSTM-1200.webp 1200w"
               sizes="(max-width: 600px) 100vw, 50vw"
-              alt="Véhicule STM nettoyage"
+              alt="Véhicule STM - Service de nettoyage à domicile pour particuliers à Saint-Étienne"
               effect="blur"
             />
           </div>
