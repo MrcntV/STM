@@ -164,7 +164,8 @@ const ServicesPart: React.FC = () => {
 
               <li>Débarras de caves, greniers, garages et dépendances</li>
               <li>
-                Accompagnement pour état des lieux de sortie ou de rentrée
+                Mise en propreté de vos locaux avant relocation, démenagement ou
+                vente.
               </li>
             </ul>
 
@@ -201,22 +202,27 @@ const ServicesPart: React.FC = () => {
         <div className="materials-section">
           <h2>Des moyens professionnels au service des particuliers</h2>
           <p>
-            Nous utilisons du{" "}
-            <strong>matériel de qualité professionnelle</strong> pour garantir
-            un nettoyage en profondeur. Nos véhicules STM (Opel Combo, Fiat
-            Scudo) sont équipés pour intervenir rapidement et efficacement.
+            Chez STM, nous mettons à disposition des particuliers le même niveau
+            d’exigence et d'équipement que pour nos prestations
+            professionnelles. Nos véhicules (Opel Combo, Fiat Doblò) sont
+            équipés pour nous permettre d’intervenir rapidement et efficacement
+            à votre domicile.
           </p>
           <p>
-            Grâce à notre <strong>monobrosse</strong>, nos{" "}
-            <strong>aspirateurs eau et poussière</strong>, et notre{" "}
-            <strong>nettoyeur haute pression</strong>, nous répondons à toutes
-            les exigences d’un ménage haut de gamme chez le particulier.
+            Nos équipes utilisent du <strong>matériel haut de gamme</strong>{" "}
+            adapté au nettoyage en profondeur : <strong>monobrosses</strong>{" "}
+            pour les sols, <strong>aspirateurs eau et poussière</strong>{" "}
+            puissants, <strong>nettoyeurs haute pression</strong> pour les
+            extérieurs, le tout complété par des produits d’entretien
+            professionnels respectueux des surfaces et de l’environnement.
           </p>
           <p>
             <strong>Zone d’intervention :</strong> Saint-Étienne, La Ricamarie,
             Le Chambon-Feugerolles, Firminy, Saint-Genest-Lerpt,
-            Roche-la-Molière, etc.
+            Roche-la-Molière, ainsi que dans les communes limitrophes de la
+            Loire.
           </p>
+
           <div className="lazy-wrapper">
             <LazyLoadImage
               width={"100%"}
