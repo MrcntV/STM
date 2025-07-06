@@ -185,8 +185,8 @@ const ServicesPro: React.FC = () => {
                 qui ont le <strong>sens du service</strong>. Ce{" "}
                 <strong>sérieux professionnel</strong> nous permet d’assurer des{" "}
                 <strong>prestations de nettoyage à domicile</strong> fiables,
-                régulières et de haute qualité à <strong>Saint-Étienne</strong>{" "}
-                et dans toute la <strong>Loire</strong>.
+                régulières et de qualité à <strong>Saint-Étienne</strong> et
+                dans toute la <strong>Loire</strong>.
               </p>
             </div>
             <button
@@ -205,7 +205,7 @@ const ServicesPro: React.FC = () => {
         <div className="materials-section">
           <h2>Des moyens techniques professionnels</h2>
           <p>
-            Notre flotte (Fiat Scudo, Opel Combo) est équipée pour assurer une
+            Notre flotte (Fiat Doblò, Opel Combo) est équipée pour assurer une
             logistique fluide et ponctuelle. Nos techniciens disposent de{" "}
             <strong>
               monobrosses, aspirateurs industriels, balayeuses et nettoyeurs
@@ -214,9 +214,16 @@ const ServicesPro: React.FC = () => {
             adaptés aux grandes surfaces ou zones complexes.
           </p>
           <p>
-            Nous intervenons à Saint-Étienne, La Talaudière,
-            Andrézieux-Bouthéon, Firminy, Saint-Chamond, et dans toute la Loire.
+            Nous intervenons principalement à <strong>Saint-Étienne</strong>,{" "}
+            <strong>La Talaudière</strong>, <strong>Andrézieux-Bouthéon</strong>
+            , <strong>Firminy</strong>, <strong>Saint-Chamond</strong> ainsi que
+            dans l'ensemble du département de la <strong>Loire (42)</strong>.
+            Nous nous déplaçons également dans les{" "}
+            <strong>communes situées dans les départements limitrophes</strong>,
+            afin de proposer des prestations de qualité partout où vous en avez
+            besoin.
           </p>
+
           <div className="lazy-wrapper">
             <LazyLoadImage
               width={"100%"}

@@ -201,20 +201,27 @@ const ServicesSyndic: React.FC = () => {
         </div>
 
         <div className="materials-section">
-          <h2>Moyens humains et techniques</h2>
+          <h2>Moyens humains et techniques adaptés aux copropriétés</h2>
           <p>
-            Nos agents de propreté sont encadrés, suivis régulièrement et
-            interviennent avec du matériel adapté :{" "}
+            Nos agents de propreté sont encadrés, formés en continu et
+            interviennent avec du matériel professionnel de qualité :{" "}
             <strong>
-              aspirateurs professionnels, balayeuses, autolaveuses
+              aspirateurs industriels, balayeuses, autolaveuses, produits
+              désinfectants et équipements de sécurité
             </strong>
-            , produits désinfectants normés, équipements de sécurité…
+            . Cette organisation garantit un nettoyage efficace, fiable et
+            respectueux des espaces communs et des résidents.
           </p>
           <p>
-            Nos véhicules utilitaires nous permettent d’intervenir rapidement
-            sur toute la métropole stéphanoise, y compris dans les zones à accès
-            restreint.
+            Notre flotte de véhicules utilitaires (Fiat Doblò, Opel Combo) nous
+            permet d’assurer des interventions rapides et ponctuelles, que ce
+            soit à <strong>Saint-Étienne</strong>, dans l’ensemble du
+            département de la <strong>Loire (42)</strong>, ou dans les{" "}
+            <strong>communes limitrophes</strong>. Que vous soyez syndic ou
+            gestionnaire de copropriété, vous bénéficiez ainsi d'une logistique
+            maîtrisée et d'une réactivité optimale.
           </p>
+
           <div className="lazy-wrapper">
             <LazyLoadImage
               width={"100%"}
