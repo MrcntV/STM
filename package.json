@@ -14,6 +14,7 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "compression": "^1.8.0",
+    "express": "^4.22.3",
     "framer-motion": "^12.12.1",
     "helmet": "^8.1.0",
     "locomotive-scroll": "^4.1.4",
@@ -66,5 +67,13 @@
     "@types/react-helmet": "^6.1.11",
     "@types/react-lazy-load-image-component": "^1.6.4",
     "@types/react-lazyload": "^3.2.3"
+  },
+  "overrides": {
+    "@svgr/webpack": "^8.1.0",
+    "nth-check": "^2.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "serialize-javascript": "^7.1.4",
+    "underscore": "^1.13.8",
+    "webpack-dev-middleware": "^7.4.6"
   }
 }

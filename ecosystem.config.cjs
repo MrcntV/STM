@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "STM-Server",
       script: "./serveur/serveur.js",
-      cwd: "/STM",
+      cwd: "/70-stm-site",
       interpreter: "node",
       watch: false,
       instances: 1,

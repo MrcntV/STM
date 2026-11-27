@@ -31,3 +31,6 @@ yarn-error.log*
 *.config.ts
 generate-*.js
 generate-*.ts
+# Journaux du serveur (PM2, nginx) : jamais dans git
+/logs/
+/serveur/access.log
